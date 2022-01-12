@@ -38,18 +38,24 @@
 
 .sobre-header{
     position: absolute;
-    top: 45%;
-    left: 15%;
+    top: 5%;
+    left: 7%;
+    overflow-y: hidden;
 }
 
 .sobre-header > p{
     font-family: var(--montserrat);
     color: #ffffff;
     font-size: 38px;
+    text-align: center;
     text-shadow: .2rem .2rem rgba(0, 0, 0, 0.295);
-    width: 70%;
+    width: 55%;
     opacity: 0;
     animation: moveBanner 1s 0.3s forwards;
+}
+
+.header-logo{
+    width: 320px;
 }
 
 .div-ver-mais{

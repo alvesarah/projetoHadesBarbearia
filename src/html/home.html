@@ -11,6 +11,7 @@
     </head>
     <body data-tema="dark">
         <!-- HEADER -->
+        <img class="troca-tema js-troca-tema" src="../imagens/icones/tema-dark.svg" alt="">
         <div class="hamburguer">
             <div class="line" id="line1"></div>
             <div class="line" id="line2"></div>
@@ -18,11 +19,12 @@
             <span>fechar</span>
         </div>
         <!-- HEADER -->
-        <header>
+        <header id="home">
             <figure class="background-header">
                 <img src="../imagens/background-header.jpg" alt="Background do header">
             </figure>
             <div class="sobre-header">
+                <img class="header-logo" src="../imagens/logo/logo-dark.png" alt="logo">
                 <p><strong>Hades</strong> é uma barbearia moderna que prioriza o conforto e bem-estar dos clientes, com um bom atendimento e local confortável.</p>
             </div>
             <div class="div-ver-mais">
@@ -37,32 +39,30 @@
                         <a href="#home" class="menu-link">Home</a>
                     </li>
                     <li class="menu-item">
-                        <a href="#conhecimentos" class="menu-link">Conhecimentos</a>
+                        <a href="#quem-somos" class="menu-link">Quem somos</a>
                     </li>
                     <li class="menu-item">
-                        <a href="#projetos" class="menu-link">Projetos</a>
+                        <a href="#filosofia" class="menu-link">Filosofia</a>
                     </li>
                     <li class="menu-item">
-                        <a href="" class="menu-link">Contato</a>
+                        <a href="#diferenciais" class="menu-link">Diferenciais</a>
                     </li>
                     <li class="menu-item">
-                        <a href="" class="menu-link">Orçamento</a>
+                        <a href="#servicos" class="menu-link">Serviços</a>
                     </li>
                 </ul>
             </nav>
-            <div class="social-media">
-                <a target="_blank" href="https://www.facebook.com/profile.php?id=100009381085277"><i class="fab fa-facebook"></i></a>
-                <a target="_blank" href="https://www.linkedin.com/in/sarahalvesoliveira/"><i class="fab fa-linkedin"></i></a>
-                <a target="_blank" href="https://github.com/sashamoon"><i class="fab fa-github"></i></a>
+            <div class="sidebar-membro">
+                <button class="btn-membro">Se torne um membro</button>
             </div>
         </aside>
         <!-- HEADER -->
         <main>
             <section id="quem-somos">
                 <h1>
-                    <img src="../imagens/icones/quem-somos-dark.png" alt="mãos dadas"> 
+                    <img class="icone-quem-somos" src="../imagens/icones/quem-somos-dark.png" alt="mãos dadas"> 
                     Quem somos 
-                    <img src="../imagens/icones/quem-somos-dark.png" alt="mãos dadas">
+                    <img class="icone-quem-somos" src="../imagens/icones/quem-somos-dark.png" alt="mãos dadas">
                 </h1>
                 <p class="descricao-quem-somos">O hades barber atua desde 2022 e desde então se esforça para total satifação do cliente seja em corte, barba ou qualquer outro procedimento estético, do começo ao fim. Nós ofeecemos uma gama de serviços com muitos produtos de qualidade e a cada dia estamos crecenso mais no ramo.</p>
                 <div class="imagens-quem-somos">
@@ -73,14 +73,14 @@
             </section>
             <section id="filosofia">
                 <h1>
-                    <img src="../imagens/icones/filosofia-dark.png" alt="barbearia"> 
+                    <img class="icone-filosofia" src="../imagens/icones/filosofia-dark.png" alt="barbearia"> 
                     Filosofia 
-                    <img src="../imagens/icones/filosofia-dark.png" alt="barbearia">
+                    <img class="icone-filosofia" src="../imagens/icones/filosofia-dark.png" alt="barbearia">
                 </h1>
                 <div class="descricao-filosofia">
                     <article>
                         <div>
-                            <img src="../imagens/icones/missao-dark.png" alt="flecha no alvo">
+                            <img class="icone-missao" src="../imagens/icones/missao-dark.png" alt="flecha no alvo">
                             <h3>
                                 Missão
                             </h3>
@@ -89,7 +89,7 @@
                     </article>
                     <article>
                         <div>
-                            <img src="../imagens/icones/visao-dark.png" alt="olho">
+                            <img class="icone-visao src="../imagens/icones/visao-dark.png" alt="olho">
                             <h3>
                                 Visão
                             </h3>
@@ -99,7 +99,7 @@
                     </article>
                     <article>
                         <div>
-                            <img src="../imagens/icones/valores-dark.png" alt="mão com coração em cima">
+                            <img class="icone-valores src="../imagens/icones/valores-dark.png" alt="mão com coração em cima">
                             <h3>
                                 Valores
                             </h3>
@@ -143,9 +143,9 @@
             </section>
             <section id="servicos">
                 <h1>
-                    <img src="../imagens/icones/servicos-dark.png" alt="mãos dadas"> 
+                    <img class="icone-servicos src="../imagens/icones/servicos-dark.png" alt="mãos dadas"> 
                     Serviços
-                    <img src="../imagens/icones/servicos-dark.png" alt="mãos dadas">
+                    <img class="icone-servicos src="../imagens/icones/servicos-dark.png" alt="mãos dadas">
                 </h1>
                 <div class="descricao-servicos">
                     <div class="servicos-um">
@@ -240,11 +240,11 @@
         <footer>
             <div class="parte-cima">
                 <div class="footer-cadastro">
-                    <img class="logo-footer" src="../imagens/logo/logo-dark.png" alt="logo">
-                    <p>Receba atualizações e as últimas notícias diretamente do seu e-mail. Basta fazer o cadastro!</p>
+                    <img class="logo-footer logo" src="../imagens/logo/logo-dark.png" alt="logo">
+                    <p>Receba atualizações e as últimas notícias diretamente do seu e-mail. Basta fazer o <a>cadastro</a>!</p>
                 </div>
                 <div class="footer-menu">
-                    <p class="menu">Menu</p>
+                    <p class="menu-lista">Menu</p>
                     <p><a href="#quem-somos">Quem Somos</a></p>
                     <p><a href="#filosofia">Filosofia</a></p>
                     <p><a href="#diferenciais">Diferenciais</a></p>
@@ -261,6 +261,13 @@
             </div>
         </footer>
         <!-- FOOTER -->
+        <a href="#home" id="link-topo">
+            <img src="../imagens/icones/up-arrow-dark.png" alt="">
+        </a>
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <script src="../js/view/home-view.js"></script>
+        <script src="../js/controller/home-controller.js"></script>
+        <script src="../js/model/home-model.js"></script>
         <script src="../js/main.js"></script>
     </body>
 </html>

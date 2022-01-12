@@ -38,6 +38,14 @@ header{
     position: relative;
 }
 
+.troca-tema{
+    position: absolute;
+    z-index: 98;
+    right: 6rem;
+    top: 2rem;
+    cursor: pointer;
+}
+
 /* HAMBURGUER */
 .hamburguer{
     width: 2rem;
@@ -67,7 +75,7 @@ header{
 
 .show-menu #line1{
     transform: rotate(45deg) translate(.1rem, .65rem);
-    background-color: rgba(0, 0, 0, 0.664);
+    background-color: var(--preto);
     box-shadow: none;
 }
 
@@ -78,7 +86,7 @@ header{
 
 .show-menu #line3{
     transform: rotate(-45deg) translate(.2rem, -.65rem);
-    background-color: rgba(0, 0, 0, 0.664);
+    background-color: var(--preto);
     box-shadow: none;
 }
 
@@ -91,7 +99,7 @@ header{
     justify-content: center;
     align-items: center;
     color: white;
-    font-family: var(--font-action);
+    font-family: var(--montserrat);
     background: #FF0099;
     background: -webkit-linear-gradient(to right, #493240, #FF0099);
     background: linear-gradient(to right, #493240, #FF0099);
@@ -116,7 +124,7 @@ header{
 .sidebar{
     width: 20rem;
     height: 100vh;
-    background-color: #fff;
+    background-color: var(--branco);
     position: fixed;
     top: 0;
     z-index: 99;
@@ -138,11 +146,11 @@ header{
 
 .menu-item{
     text-align: center;
-    margin-bottom: .5rem;
+    margin-bottom: 1rem;
 }
 
 .menu-link{
-    font-family: var(--font-action);
+    font-family: var(--montserrat);
     font-size: 1.5rem;
     color: gray;
     transition: color 1s;
@@ -150,37 +158,36 @@ header{
 }
 
 .menu-link:hover{
-    color: #6A3093;
+    color: var(--vermelho);
 }
 
-.social-media{
+.sidebar-membro{
     position: absolute;
-    bottom: 2rem;
+    bottom: 6rem;
     width: 100%;
     display: flex;
     justify-content: space-evenly;
 }
 
-.social-media i{
-    color: white;
-    background: #FF0099;
-    background: -webkit-linear-gradient(to right, #493240, #FF0099);
-    background: linear-gradient(to right, #493240, #FF0099);
-
-    height: 2.5rem;
-    width: 2.5rem;
-    font-size: 1.5rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 50%;
-    transition: background-color 1s;
+.btn-membro {
+    border-radius: 15px;
+    color: #FFFFFF;
+    font-family: var(--montserrat);
+    font-weight: bold;
+    font-size: 16px;
+    padding: 10px;
+    background-color: #CF261F;
+    text-decoration: none;
+    cursor: pointer;
+    text-align: center;
+    border: 0;
 }
 
-.social-media i:hover{
-    background-color: #A044FF;
+.btn-membro:hover{
+    background-color: var(--vermelho-escuro);
+    color: var(--vermelho-claro);
+    transition: 1s;
 }
-
 
 footer{
     width: 100%;
@@ -232,7 +239,11 @@ footer{
     color: var(--preto);
 }
 
-.menu{
+.footer-menu > p > a:hover{
+    color: var(--vermelho);
+}
+
+.menu-lista{
     font-size: 24px;
     margin-bottom: 40px;
 }
@@ -249,4 +260,21 @@ footer{
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+
+#link-topo{
+    position: fixed;
+    right: 3rem;
+    bottom: 3rem;
+    width: 3rem;
+    height: 3rem;
+    background: #333333;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #dd1818, #333333);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #dd1818, #333333); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    color: #fff;
+    box-shadow: 0 0 .4rem .6rem #00000009;
 }
