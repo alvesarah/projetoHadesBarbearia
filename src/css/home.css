@@ -55,7 +55,7 @@
 .div-ver-mais{
     position: absolute;
     top: 90%;
-    left: 45%;
+    left: 47%;
     text-align: center;
 }
 
@@ -81,6 +81,41 @@
 /* QUEM SOMOS */
 #quem-somos{
     width: 100%;
-    height: 100vh;
+    min-height: 100vh;
+    background-color: var(--vermelho-claro);
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
 }
 
+#quem-somos > h1{
+    font-family: var(--montserrat);
+    color: var(--preto);
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#quem-somos > h1 > img{
+    padding: 0 50px;
+}
+
+.descricao-quem-somos{
+    text-align: center;
+    margin: 70px;
+    font-size: 18px;
+    color: var(--preto);
+    font-family: var(--montserrat);
+}
+
+.imagens-quem-somos{
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.imagens-quem-somos > img{
+    width: 485px;
+    height:  300px;
+}
