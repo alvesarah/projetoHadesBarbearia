@@ -15,7 +15,7 @@ body{
     --vermelho: #cf261f;
 }
 
-body[data-tema='ligth']{
+body[data-tema='light']{
     --branco:#ffffff;
     --preto:#000000;
     --vermelho-escuro:#8f000c;
