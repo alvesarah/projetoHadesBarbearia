@@ -1,12 +1,273 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    Teste
-</body>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="../css/reset.css">
+        <link rel="stylesheet" href="../css/global.css">
+        <link rel="stylesheet" href="../css/home.css">
+        <title>Home - Hades | Barber Lounge</title>
+    </head>
+    <body data-tema="dark">
+        <!-- HEADER -->
+        <img class="troca-tema js-troca-tema" src="../imagens/icones/tema-dark.svg" alt="">
+        <div class="hamburguer">
+            <div class="line" id="line1"></div>
+            <div class="line" id="line2"></div>
+            <div class="line" id="line3"></div>
+            <span>fechar</span>
+        </div>
+        <!-- HEADER -->
+        <header id="home">
+            <figure class="background-header">
+                <img src="../imagens/background-header.jpg" alt="Background do header">
+            </figure>
+            <div class="sobre-header">
+                <img class="header-logo" src="../imagens/logo/logo-dark.png" alt="logo">
+                <p><strong>Hades</strong> é uma barbearia moderna que prioriza o conforto e bem-estar dos clientes, com um bom atendimento e local confortável.</p>
+            </div>
+            <div class="div-ver-mais">
+                <a href="#quem-somos">Ver mais</a><br><i class="fas fa-chevron-down seta-baixo"></i>
+            </div>
+        </header>
+        <!-- HEADER -->
+        <aside class="sidebar">
+            <nav>
+                <ul class="menu">
+                    <li class="menu-item">
+                        <a href="#home" class="menu-link">Home</a>
+                    </li>
+                    <li class="menu-item">
+                        <a href="#quem-somos" class="menu-link">Quem somos</a>
+                    </li>
+                    <li class="menu-item">
+                        <a href="#filosofia" class="menu-link">Filosofia</a>
+                    </li>
+                    <li class="menu-item">
+                        <a href="#diferenciais" class="menu-link">Diferenciais</a>
+                    </li>
+                    <li class="menu-item">
+                        <a href="#servicos" class="menu-link">Serviços</a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="sidebar-membro">
+                <button class="btn-membro">Se torne um membro</button>
+            </div>
+        </aside>
+        <!-- HEADER -->
+        <main>
+            <section id="quem-somos">
+                <h1>
+                    <img class="icone-quem-somos" src="../imagens/icones/quem-somos-dark.png" alt="mãos dadas"> 
+                    Quem somos 
+                    <img class="icone-quem-somos" src="../imagens/icones/quem-somos-dark.png" alt="mãos dadas">
+                </h1>
+                <p class="descricao-quem-somos">O hades barber atua desde 2022 e desde então se esforça para total satifação do cliente seja em corte, barba ou qualquer outro procedimento estético, do começo ao fim. Nós ofeecemos uma gama de serviços com muitos produtos de qualidade e a cada dia estamos crecenso mais no ramo.</p>
+                <div class="imagens-quem-somos">
+                    <img src="../imagens/barbearia.jpg" alt="Dentro da barbearia">
+                    <img src="../imagens/homem-avental.jpg" alt="Homem com avental">
+                    <img src="../imagens/barbearia-clientes.jpg" alt="Barbearia com clientes">
+                </div>
+            </section>
+            <section id="filosofia">
+                <h1>
+                    <img class="icone-filosofia" src="../imagens/icones/filosofia-dark.png" alt="barbearia"> 
+                    Filosofia 
+                    <img class="icone-filosofia" src="../imagens/icones/filosofia-dark.png" alt="barbearia">
+                </h1>
+                <div class="descricao-filosofia">
+                    <article>
+                        <div>
+                            <img class="icone-missao" src="../imagens/icones/missao-dark.png" alt="flecha no alvo">
+                            <h3>
+                                Missão
+                            </h3>
+                        </div>
+                        <p class="descricao-missao">A barber Hades tem a missão de prestar com excelência os serviços de corte e barba, para realçar a beleza do público masculino e proporcionar uma experiência de plena satisfação, sempre buscando novos métodos de serviço e atendimento.</p>
+                    </article>
+                    <article>
+                        <div>
+                            <img class="icone-visao src="../imagens/icones/visao-dark.png" alt="olho">
+                            <h3>
+                                Visão
+                            </h3>
+                            
+                        </div>
+                        <p class="descricao-visao">Se tornar uma empresa de estética masculina que seja referência nacionalmente e reconhecida por seus valores e fidelização e satisfação dos clientes.</p>
+                    </article>
+                    <article>
+                        <div>
+                            <img class="icone-valores src="../imagens/icones/valores-dark.png" alt="mão com coração em cima">
+                            <h3>
+                                Valores
+                            </h3>
+                        </div>
+                        <p class="descricao-valores">
+                            Conduta ética;<br>
+                            Bom atendimento;<br>
+                            Preços justos;<br>
+                            Inovação;<br>
+                            Qualidade;<br>
+                            Comunicação clara e precisa;
+                        </p>
+                    </article>
+                </div>
+            </section>
+            <section id="diferenciais">
+                <h1>
+                    <img src="../imagens/icones/diferencial-dark.png" alt="mãos dadas"> 
+                    Nossos Diferenciais
+                    <img src="../imagens/icones/diferencial-dark.png" alt="mãos dadas">
+                </h1>
+                <div class="descricao-diferenciais">
+                    <article>
+                        <h3>Corte</h3>
+                        <p>Cortes tradicionais e modernos, buscando sempre melhorias e com profissionais qualificados</p>
+                        <img src="../imagens/icones/corte-dark.png" alt="icone rosto e tesoura">
+                    </article>
+                    <hr width="1" size="300">
+                    <article>
+                        <h3>Barba</h3>
+                        <p>Toalha quente no rosto e na barba, lâminas para cada tipo de barba e pele, produtos para pré e pós barba, calmantes e massageador, para uma barba perfeita.</p>
+                        <img src="../imagens/icones/barba-dark.png" alt="produto de barba">
+                    </article>
+                    <hr width="1" size="300">
+                    <article>
+                        <h3>Produtos</h3>
+                        <p>Trabalhamos com os melhores produtos do mundo, tanto com produtos internacionais e nacionais. Sempre visando o melhor atendimento para nosso cliente.</p>
+                        <img src="../imagens/icones/produtos-dark.png" alt="mão segurando uma caixa">
+                    </article>
+                </div>
+            </section>
+            <section id="servicos">
+                <h1>
+                    <img class="icone-servicos src="../imagens/icones/servicos-dark.png" alt="mãos dadas"> 
+                    Serviços
+                    <img class="icone-servicos src="../imagens/icones/servicos-dark.png" alt="mãos dadas">
+                </h1>
+                <div class="descricao-servicos">
+                    <div class="servicos-um">
+                        <article>
+                            <div>
+                                <p>Corte de Cabelo</p>
+                                <span>Corte de todos os estilos</span>
+                            </div>
+                            <p>R$ 30,00</p>
+                        </article>
+                        <hr>
+                        <article>
+                            <div>
+                                <p>Corte de cabelo e Barba</p>
+                                <span>Combo promocional</span>
+                            </div>
+                            <p>R$ 70,00</p>
+                        </article>
+                        <hr>
+                        <article>
+                            <div>
+                                <p>Pezinho</p>
+                                <span>Acabamento</span>
+                            </div>
+                            <p>R$ 15,00</p>
+                        </article>
+                        <hr>
+                        <article>
+                            <div>
+                                <p>Barboterapia</p>
+                                <span>Limpeza de pele, esfoliação e massageador</span>
+                            </div>
+                            <p>R$ 60,00</p>
+                        </article>
+                        <hr>
+                        <article>
+                            <div>
+                                <p>Barba com toalha quente</p>
+                                <span>Procedimento com massageador</span>
+                            </div>
+                            <p>R$ 25,00</p>
+                        </article>
+                        <hr>
+                    </div>
+
+                    <div class="servicos-dois">
+                        <article>
+                            <div>
+                                <p>Relaxamento de cabelo</p>
+                                <span>Procedimento com reconstrução</span>
+                            </div>
+                            <p>R$ 60,00</p>
+                        </article>
+                        <hr>
+                        <article>
+                            <div>
+                                <p>Selagem de cabelo</p>
+                                <span>Recuperação do cabelo</span>
+                            </div>
+                            <p>R$ 50,00</p>
+                        </article>
+                        <hr>
+                        <article>
+                            <div>
+                                <p>Reconstrução capilar</p>
+                                <span>Hidratação</span>
+                            </div>
+                            <p>R$ 22,00</p>
+                        </article>
+                        <hr>
+                        <article>
+                            <div>
+                                <p>Tintura para cabelo</p>
+                                <span>Tintura com produtos selecionados</span>
+                            </div>
+                            <p>R$ 50,00</p>
+                        </article>
+                        <hr>
+                        <article>
+                            <div>
+                                <p>Tintura para barba</p>
+                                <span>Tintura com produtos selecionados</span>
+                            </div>
+                            <p>R$ 30,00</p>
+                        </article>
+                        <hr>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <!-- FOOTER -->
+        <footer>
+            <div class="parte-cima">
+                <div class="footer-cadastro">
+                    <img class="logo-footer logo" src="../imagens/logo/logo-dark.png" alt="logo">
+                    <p>Receba atualizações e as últimas notícias diretamente do seu e-mail. Basta fazer o <a>cadastro</a>!</p>
+                </div>
+                <div class="footer-menu">
+                    <p class="menu-lista">Menu</p>
+                    <p><a href="#quem-somos">Quem Somos</a></p>
+                    <p><a href="#filosofia">Filosofia</a></p>
+                    <p><a href="#diferenciais">Diferenciais</a></p>
+                    <p><a href="#servicos">Serviços</a></p>
+                </div>
+                <div class="footer-mapa">
+                    <p>Localização</p>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14670.628814805828!2d-46.990228702531006!3d-23.182708165611576!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94cf3bbde3aa291d%3A0x9c75c03a4db2d30f!2sCentral%20Barbearia!5e0!3m2!1spt-BR!2sbr!4v1641985497827!5m2!1spt-BR!2sbr" width="300" height="170" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                </div>
+            </div>
+            <div class="copyrigth">
+                <br><hr>
+                <p>copyrigth © 2022 Todos os direitos reservados</p>
+            </div>
+        </footer>
+        <!-- FOOTER -->
+        <a href="#home" id="link-topo">
+            <img src="../imagens/icones/up-arrow-dark.png" alt="">
+        </a>
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <script src="../js/view/home-view.js"></script>
+        <script src="../js/controller/home-controller.js"></script>
+        <script src="../js/model/home-model.js"></script>
+        <script src="../js/main.js"></script>
+    </body>
 </html>
