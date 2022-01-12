@@ -12,3 +12,22 @@
     --montserrat: 'Montserrat', sans-serif;
     --roboto: 'Roboto', sans-serif;
 }
+
+body{
+    --vermelho: #cf261f;
+}
+
+body[data-tema='ligth']{
+    --branco:#ffffff;
+    --preto:#000000;
+    --vermelho-escuro:#8f000c;
+    --vermelho-claro:#efdfc5;
+}
+
+body[data-tema='dark']{
+
+    --branco:#000000;
+    --preto:#ffffff;
+    --vermelho-escuro:#efdfc5;
+    --vermelho-claro:#8f000c;
+}
