@@ -3,7 +3,7 @@
 
 /*Estilização conteúdo do main*/
 main{
-    background-color: var(--branco);
+    background-color: black;
     font-family: 'Montserrat', sans-serif;
 }
 
@@ -110,7 +110,7 @@ label{
     height: 40px;
     margin-top: 15px;
     padding: 8px 16px;
-    background: var(--vermelho-claro);
+    background: #8f000c;
     color: white;
     font-weight: lighter;
     font-size: 16px;
@@ -118,3 +118,103 @@ label{
     transition: 1s all;
     cursor: pointer;
 }
+
+/*Estilização do footer*/
+
+footer{
+    background-color: #8f000c;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+
+.logo-footer{
+    width: 130px;
+    height: 130px;
+}
+
+footer section{
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    padding-bottom: 15px;
+}
+
+footer section .area-left{
+    max-width: 281px;
+}
+
+footer section .area-left p{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 13px;
+    line-height: 150%;
+    color: white;
+    margin-left: -30px;
+}
+
+ul{
+    list-style: none;
+}
+
+footer .container section nav{
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 777px;
+}
+
+footer section nav .item h6{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    margin-bottom: 8px;
+    color: white;
+    padding: 10px 0 5px;
+}
+
+footer section nav .item ul li{
+    margin-bottom: 17px;
+}
+
+
+footer section nav .item ul li a{
+    font-family: 'Montserrat', sans-serif;
+    text-decoration: none;
+    color: white;
+    font-size: 14px;
+}
+
+.item .div-localizacao-h6{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.img-mapa{
+    padding-right: 30px;
+}
+
+.h6-footer{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    color: white;
+    padding: 10px 0 5px;
+}
+
+footer section nav .item:last-child ul li a{
+    display: flex;
+    align-items: center
+}
+
+footer .copy{
+    display: flex;
+    justify-content: center;
+}
+
+footer .copy p{
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+    padding-top: 31px;
+}
+
