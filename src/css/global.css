@@ -2,13 +2,6 @@
 @import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css);
 
 :root {
-    --preto: #000000;
-    --branco: #ffffff;
-    --vermelho-escuro: #8f000c;
-    --vermelho: #cf261f;
-    --vermelho-claro: #efdfc5;
-    
-
     --montagu: 'Montagu Slab', serif;
     --montserrat: 'Montserrat', sans-serif;
     --roboto: 'Roboto', sans-serif;
@@ -40,29 +33,220 @@ body[data-tema='dark']{
 
 header{
     width: 100%;
-    min-height: 130px;
-    padding: 0 40px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+    height: 100vh;
+    overflow: hidden;
+    position: relative;
 }
 
-.logo-header{
+/* HAMBURGUER */
+.hamburguer{
+    width: 2rem;
+    height: 2rem;
+    position: fixed;
+    z-index: 100;
+    right: 2rem;
+    top: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    cursor: pointer;
+    transition: all 1s;
+}
+
+.show-menu .hamburguer{
+    right: 16rem;
+}
+
+.line{
+    width: 100%;
+    height: .1rem;
+    background-color: #fff;
+    box-shadow: 0.1rem 0.1rem 1px black;
+    transition: all .5s;
+}
+
+.show-menu #line1{
+    transform: rotate(45deg) translate(.1rem, .65rem);
+    background-color: rgba(0, 0, 0, 0.664);
+    box-shadow: none;
+}
+
+.show-menu #line2{
+    opacity: 0;
+    visibility: hidden;
+}
+
+.show-menu #line3{
+    transform: rotate(-45deg) translate(.2rem, -.65rem);
+    background-color: rgba(0, 0, 0, 0.664);
+    box-shadow: none;
+}
+
+.hamburguer span{
+    position: absolute;
+    left: 3rem;
+    height: 2rem;
+    width: 6rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-family: var(--font-action);
+    background: #FF0099;
+    background: -webkit-linear-gradient(to right, #493240, #FF0099);
+    background: linear-gradient(to right, #493240, #FF0099);
+    opacity: 0;
+}
+
+.hamburguer span::before{
+    content: "";
+    position: absolute;
+    border-right: .5rem solid #493240;
+    border-top: .5rem solid transparent;
+    border-left: .5rem solid transparent;
+    border-bottom: .5rem solid transparent;
+    left: -1rem;
+}
+
+.show-menu .hamburguer:hover span{
+    opacity: 1;
+}
+
+/* SIDEBAR */
+.sidebar{
+    width: 20rem;
+    height: 100vh;
+    background-color: #fff;
+    position: fixed;
+    top: 0;
+    z-index: 99;
+    right: -20rem;
+    transition: all 1s;
+}
+
+.show-menu .sidebar{
+    right: 0rem;
+}
+
+.menu{
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+}
+
+.menu-item{
+    text-align: center;
+    margin-bottom: .5rem;
+}
+
+.menu-link{
+    font-family: var(--font-action);
+    font-size: 1.5rem;
+    color: gray;
+    transition: color 1s;
+    text-transform: uppercase;
+}
+
+.menu-link:hover{
+    color: #6A3093;
+}
+
+.social-media{
+    position: absolute;
+    bottom: 2rem;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.social-media i{
+    color: white;
+    background: #FF0099;
+    background: -webkit-linear-gradient(to right, #493240, #FF0099);
+    background: linear-gradient(to right, #493240, #FF0099);
+
+    height: 2.5rem;
+    width: 2.5rem;
+    font-size: 1.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    transition: background-color 1s;
+}
+
+.social-media i:hover{
+    background-color: #A044FF;
+}
+
+
+footer{
+    width: 100%;
+    height: 50vh;
+    padding: 0 20px;
+    background-color: var(--branco);
+    display: flex;
+    flex-direction: column;
+}
+
+.parte-cima{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.copyrigth{
+    width: 100%;
+    height: 10vh;
+}
+
+.copyrigth > p{
+   text-align: center;
+   font-family: var(--roboto);
+   font-size: 12px;
+   margin-top: 20px;
+   color: var(--preto);
+}
+
+.logo-footer{
     width: 160px;
 }
 
-nav{
-    display: flex;
-    align-items: center;
-}
-
-.header-nav-a{
-    color: #ffffff;
+.footer-cadastro{
+    width: 15%;
+    font-size: 18px;
     font-family: var(--montserrat);
-    margin-left: 40px;
+    color: var(--preto);
 }
 
-.troca-tema{
-    margin-left: 60px;
-    cursor: pointer;
+.footer-menu > p{
+    text-align: center;
+    font-family: var(--montserrat);
+    color: var(--preto);
+    margin-top: 20px;
+}
+
+.footer-menu > p > a{
+    color: var(--preto);
+}
+
+.menu{
+    font-size: 24px;
+    margin-bottom: 40px;
+}
+
+.footer-mapa > p{
+    text-align: center;
+    color: var(--preto);
+    font-size: 18px;
+    font-family: var(--montserrat);
+}
+
+.footer-mapa{
+    width: 27%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }

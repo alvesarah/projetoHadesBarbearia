@@ -10,29 +10,50 @@
         <title>Home - Hades | Barber Lounge</title>
     </head>
     <body data-tema="dark">
-        <header id="header-absolute">
-            <img class="logo-header" src="../imagens/logo/logo-dark.png" alt="logo">
-            <nav>
-                <a href="#home" class="header-nav-a">Home</a>
-                <a href="#quem-somos" class="header-nav-a">Quem somos</a>
-                <a href="#filosofia" class="header-nav-a">Filosofia</a>
-                <a href="#diferenciais" class="header-nav-a">Diferenciais</a>
-                <a href="#serviços" class="header-nav-a">Serviços</a>
-                <img class="troca-tema js-troca-tema" src="../imagens/icones/tema-dark.svg" alt="Botão troca de tema">
-            </nav>
+        <div class="hamburguer">
+            <div class="line" id="line1"></div>
+            <div class="line" id="line2"></div>
+            <div class="line" id="line3"></div>
+            <span>fechar</span>
+        </div>
+        <header>
+            <figure class="background-header">
+                <img src="../imagens/background-header.jpg" alt="Background do header">
+            </figure>
+            <div class="sobre-header">
+                <p><strong>Hades</strong> é uma barbearia moderna que prioriza o conforto e bem-estar dos clientes, com um bom atendimento e local confortável.</p>
+            </div>
+            <div class="div-ver-mais">
+                <a href="#quem-somos">Ver mais</a><br><i class="fas fa-chevron-down seta-baixo"></i>
+            </div>
         </header>
+        <aside class="sidebar">
+            <nav>
+                <ul class="menu">
+                    <li class="menu-item">
+                        <a href="#home" class="menu-link">Home</a>
+                    </li>
+                    <li class="menu-item">
+                        <a href="#conhecimentos" class="menu-link">Conhecimentos</a>
+                    </li>
+                    <li class="menu-item">
+                        <a href="#projetos" class="menu-link">Projetos</a>
+                    </li>
+                    <li class="menu-item">
+                        <a href="" class="menu-link">Contato</a>
+                    </li>
+                    <li class="menu-item">
+                        <a href="" class="menu-link">Orçamento</a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="social-media">
+                <a target="_blank" href="https://www.facebook.com/profile.php?id=100009381085277"><i class="fab fa-facebook"></i></a>
+                <a target="_blank" href="https://www.linkedin.com/in/sarahalvesoliveira/"><i class="fab fa-linkedin"></i></a>
+                <a target="_blank" href="https://github.com/sashamoon"><i class="fab fa-github"></i></a>
+            </div>
+        </aside>
         <main>
-            <section class="header">
-                <figure class="background-header">
-                    <img src="../imagens/background-header.jpg" alt="Background do header">
-                </figure>
-                <div class="sobre-header">
-                    <p><strong>Hades</strong> é uma barbearia moderna que prioriza o conforto e bem-estar dos clientes, com um bom atendimento e local confortável.</p>
-                </div>
-                <div class="div-ver-mais">
-                    <a href="#quem-somos">Ver mais</a><br><i class="fas fa-chevron-down seta-baixo"></i>
-                </div>
-            </section>
             <section id="quem-somos">
                 <h1>
                     <img src="../imagens/icones/quem-somos-dark.png" alt="mãos dadas"> 
@@ -211,5 +232,29 @@
                 </div>
             </section>
         </main>
+        <footer>
+            <div class="parte-cima">
+                <div class="footer-cadastro">
+                    <img class="logo-footer" src="../imagens/logo/logo-dark.png" alt="logo">
+                    <p>Receba atualizações e as últimas notícias diretamente do seu e-mail. Basta fazer o cadastro!</p>
+                </div>
+                <div class="footer-menu">
+                    <p class="menu">Menu</p>
+                    <p><a href="#quem-somos">Quem Somos</a></p>
+                    <p><a href="#filosofia">Filosofia</a></p>
+                    <p><a href="#diferenciais">Diferenciais</a></p>
+                    <p><a href="#servicos">Serviços</a></p>
+                </div>
+                <div class="footer-mapa">
+                    <p>Localização</p>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14670.628814805828!2d-46.990228702531006!3d-23.182708165611576!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94cf3bbde3aa291d%3A0x9c75c03a4db2d30f!2sCentral%20Barbearia!5e0!3m2!1spt-BR!2sbr!4v1641985497827!5m2!1spt-BR!2sbr" width="300" height="170" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                </div>
+            </div>
+            <div class="copyrigth">
+                <br><hr>
+                <p>copyrigth © 2022 Todos os direitos reservados</p>
+            </div>
+        </footer>
+        <script src="../js/main.js"></script>
     </body>
 </html>
