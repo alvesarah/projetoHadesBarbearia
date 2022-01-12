@@ -1,5 +1,5 @@
 <p align="center">
-    <img src="./assets/logo-hades-comfundo.png" width="350" title="hover text">
+    <img src="./src/assets/logo-fundo.png" width="350" title="hover text">
 </p>
 <h1 align="center">Hades | Barber Lounge</h1>
 
@@ -131,7 +131,7 @@ As seguintes ferramentas foram usadas na construção do projeto:
 <tr>
 <td>
 <a href="https://github.com/sashamoon">
-    <img style="border-radius: 50%;" src="./assets/foto-sarah.jpg" width="100px;" alt="">
+    <img style="border-radius: 50%;" src="./src/assets/foto-sarah.jpg" width="100px;" alt="">
     <br>
     <sub><b>Sarah Alves</b></sub>
 </a>
@@ -144,7 +144,7 @@ As seguintes ferramentas foram usadas na construção do projeto:
 
 <td>
 <a href="https://github.com/sashamoon">
-    <img style="border-radius: 50%;" src="./assets/rafaela-foto.jpeg" width="100px;" alt="">
+    <img style="border-radius: 50%;" src="./src/assets/foto-rafaela.jpeg" width="100px;" alt="">
     <br>
     <sub><b>Rafaela Dias</b></sub>
 </a> 
