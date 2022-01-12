@@ -164,3 +164,47 @@ section > h1 > img{
     color: var(--preto);
     margin: 50px 20px;
 }
+
+/* NOSSOS DIFERENCIAIS */
+
+#diferenciais{
+    width: 100%;
+    height: 100vh;
+    background-image: url(../imagens/background-diferenciais.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.descricao-diferenciais{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.descricao-diferenciais > article{
+    width: 360px;
+    height: 320px;
+    margin: 0 20px;
+}
+
+.descricao-diferenciais > article > h3{
+    text-align: center;
+    font-size: 36px;
+    font-family: var(--montserrat);
+    color: var(--preto);
+}
+
+.descricao-diferenciais > article > p{
+    text-align: center;
+    font-size: 18px;
+    font-family: var(--montserrat);
+    color: var(--preto);
+    margin-top: 30px;
+}
+
+.descricao-diferenciais > article > img{
+    margin: 8% 0 0 35%;
+}
