@@ -1,10 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400&family=Roboto:wght@300;400&display=swap');
 @import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css);
-
 /*Estilização conteúdo do main*/
 main{
-    background-color: black;
-    font-family: 'Montserrat', sans-serif;
+    background-color: var(--vermelho-claro);
+    font-family: var(--montserrat);
 }
 
 
@@ -13,35 +12,33 @@ main{
     height: 100px;
 }
 
+.div-logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 .div-textos{
     display: flex;
     justify-content: center;
     align-items: center;
-    color: white;
-    flex-direction: column;
+    color: var(--preto);
 }
 
-h3{
-    font-size: 28px;
+.div-logo > h1{
+    font-size: 36px;
     text-align: center;
-    margin-left: 30px;
+    padding: 40px;
     margin-bottom: 10px;
+    color: var(--preto);
+    width: 20%;
 }
 
-p{
-    font-size: 15px;
-    padding-left: 40px;
-}
 
-.container-logo{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
 
 /*Estilização do formulário*/
 form{
     display: flex;
+    align-items: center;
     flex-direction:column;
     padding: 0 12px;
     box-sizing: border-box;
@@ -53,18 +50,14 @@ label{
     padding: 0;
 }
 
-/*-------------------------*/
 
 .caixa-formulario {
-    position: relative;
     display:flex;
-    justify-content: center;  
-    background: #EFDFC5;
-    box-shadow: 0px 1px 6px rgba(0, 0, 0, 0.25);
-    border-radius: 12px;
+    justify-content: center; 
     margin: 25px 0 0 0;
-    width: 45%;
-    height: auto;
+    width: 100%;
+    min-height: 100vh;
+    color: var(--preto);
 }
 
 /*Alteração de tamanho das fontes do título*/
@@ -75,9 +68,11 @@ label{
 }
 
 .form-h3{
-    font-size: 25px;
+    font-size: 24px;
     text-align: center;
     padding: 10px;
+    font-weight: normal;
+    margin-bottom: 15px;
 }
 
 /*Alteração tamanho de fontes label*/
@@ -93,6 +88,11 @@ label{
     margin: 0 12px 24px 12px;
 }
 
+.inputs{
+    display: flex;
+    justify-content: start;
+    flex-direction: column;
+}
 .grupo-formulario input, select {
     display:block;
     width: 100%;
@@ -106,115 +106,14 @@ label{
 }
 #botao-formulario {
     position: relative;
-    width: 100px;
+    width: 200px;
     height: 40px;
     margin-top: 15px;
     padding: 8px 16px;
-    background: #8f000c;
-    color: white;
-    font-weight: lighter;
-    font-size: 16px;
-    border-radius: 25px;
+    background: var(--branco);
+    color: var(--preto);
+    font-size: 13px;
+    border-radius: 8px;
     transition: 1s all;
     cursor: pointer;
 }
-
-/*Estilização do footer*/
-
-footer{
-    background-color: #8f000c;
-    padding-top: 10px;
-    padding-bottom: 10px;
-}
-
-
-.logo-footer{
-    width: 130px;
-    height: 130px;
-}
-
-footer section{
-    display: flex;
-    align-items: flex-start;
-    justify-content: space-between;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
-    padding-bottom: 15px;
-}
-
-footer section .area-left{
-    max-width: 281px;
-}
-
-footer section .area-left p{
-    font-family: 'Montserrat', sans-serif;
-    font-size: 13px;
-    line-height: 150%;
-    color: white;
-    margin-left: -30px;
-}
-
-ul{
-    list-style: none;
-}
-
-footer .container section nav{
-    display: flex;
-    align-items: flex-start;
-    justify-content: space-between;
-    width: 100%;
-    max-width: 777px;
-}
-
-footer section nav .item h6{
-    font-family: 'Montserrat', sans-serif;
-    font-size: 18px;
-    margin-bottom: 8px;
-    color: white;
-    padding: 10px 0 5px;
-}
-
-footer section nav .item ul li{
-    margin-bottom: 17px;
-}
-
-
-footer section nav .item ul li a{
-    font-family: 'Montserrat', sans-serif;
-    text-decoration: none;
-    color: white;
-    font-size: 14px;
-}
-
-.item .div-localizacao-h6{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.img-mapa{
-    padding-right: 30px;
-}
-
-.h6-footer{
-    font-family: 'Montserrat', sans-serif;
-    font-size: 18px;
-    color: white;
-    padding: 10px 0 5px;
-}
-
-footer section nav .item:last-child ul li a{
-    display: flex;
-    align-items: center
-}
-
-footer .copy{
-    display: flex;
-    justify-content: center;
-}
-
-footer .copy p{
-    font-family: 'Montserrat', sans-serif;
-    color: white;
-    padding-top: 31px;
-}
-
