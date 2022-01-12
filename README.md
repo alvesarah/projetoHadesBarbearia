@@ -43,10 +43,6 @@ Projeto com finalidade de aprimorar as habilidades voltadas para desenvolvimento
     - [x] acesso a produtos disponiveis para compra.
     - [x] definir o tema claro ou escuro no seu navegador.
 
-<!-- ### Plataforma de agendamento
-- [x] Usuário podem se cadastrar na plataforma web ou mobile enviando:
-    - [x]  -->
-
 ---
 
 ## 🎨 Layout
