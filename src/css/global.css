@@ -1,0 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400&family=Roboto:wght@300;400&display=swap');
+
+:root {
+    --preto: #000000;
+    --branco: #ffffff;
+    --vermelho-escuro: #8f000c;
+    --vermelho: #cf261f;
+    --vermelho-claro: #efdfc5;
+    
+
+    --montagu: 'Montagu Slab', serif;
+    --montserrat: 'Montserrat', sans-serif;
+    --roboto: 'Roboto', sans-serif;
+}
