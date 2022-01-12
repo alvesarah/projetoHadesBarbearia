@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/global.css">
+    <link rel="stylesheet" href="../css/contato.css">
+    <title>Contato- Hades | Barber Lounge</title>
+</head>
+<body>
+   <main>
+       <div class="container-fale-conosco">
+        <div class="container-logo">
+            <div class="div-logo">
+                <img src="../imagens/icones/icon-fale-conosco.png"  alt="Ícone fale conosco" width="80px" height="80px">
+            </div>
+
+            <div class="div-textos">
+                <h3>Fale Conosco</h3>
+                <p>Mande uma mensagem para nossa equipe.</p>
+            </div>
+        </div>
+
+        <div class="caixa-formulario">
+            <form>
+                <h2 class="form-h2">Tem alguma dúvida?</h2>
+                <h3 class="form-h3">Envie sua mensagem para nossa equipe!</h3>
+    
+                <div class="grupo-formulario">
+                    <label for="nome">Nome Completo</label>
+                    <input type="text" id="nome" class="input-principal" required placeholder="Nome">
+                </div>
+
+                <div class="grupo-formulario">
+                    <label for="email">E-mail</label>
+                    <input type="email" id="email" class="input-principal" required placeholder="seuemail@exemplo.com">
+                </div>
+
+                <div class="grupo-formulario">
+                    <label for="celular">Celular/Whatsapp</label>
+                    <input type="number" id="celular" class="input-principal" required placeholder="(XX) XXXXX-XXXX">
+                </div>
+
+                <div class="grupo-formulario">
+                    <label>Como você conheceu a Hader Barber Lounge?</label>
+                    <select>
+                        <option>Anúncio no Facebook/Instagram</option>
+                        <option>Anúncio no Google ou outros sites</option>
+                        <option>Indicação de um amigo</option>
+                    </select>  
+                </div>
+
+                <div class="grupo-formulario">
+                    <label for="texto" id="label-textarea">Qual a sua dúvida?</label>
+                    <textarea id="texto" class="input-principal" rows="4" cols="50" required placeholder="Digite aqui a sua dúvida."></textarea>
+                </div>
+                
+                <div class="grupo-formulario">
+                    <input type="submit" value="Enviar" id="botao-formulario">
+
+                </div>
+    
+            </form>
+        </div>
+       </div>
+   </main>
+
+   
+
+    
+    <script src="../js/main.js"></script>
+</body>
+</html>

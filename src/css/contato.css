@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400&family=Roboto:wght@300;400&display=swap');
+@import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css);
+
+/*Estilização conteúdo do main*/
+main{
+    background-color: var(--branco);
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+.logo-fale-conosco{
+    width: 100px;
+    height: 100px;
+}
+
+.div-textos{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    flex-direction: column;
+}
+
+h3{
+    font-size: 28px;
+    text-align: center;
+    margin-left: 30px;
+    margin-bottom: 10px;
+}
+
+p{
+    font-size: 15px;
+    padding-left: 40px;
+}
+
+.container-logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/*Estilização do formulário*/
+form{
+    display: flex;
+    flex-direction:column;
+    padding: 0 12px;
+    box-sizing: border-box;
+    
+}
+label{
+    margin: 0 0 8px 0;
+    font-size: 12px;
+    padding: 0;
+}
+
+/*-------------------------*/
+
+.caixa-formulario {
+    position: relative;
+    display:flex;
+    justify-content: center;  
+    background: #EFDFC5;
+    box-shadow: 0px 1px 6px rgba(0, 0, 0, 0.25);
+    border-radius: 12px;
+    margin: 25px 0 0 0;
+    width: 45%;
+    height: auto;
+}
+
+/*Alteração de tamanho das fontes do título*/
+.form-h2{
+    font-size: 30px;
+    text-align: center;
+    padding: 10px;
+}
+
+.form-h3{
+    font-size: 25px;
+    text-align: center;
+    padding: 10px;
+}
+
+/*Alteração tamanho de fontes label*/
+label{
+    font-size: 18px;
+}
+
+
+.grupo-formulario{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0 12px 24px 12px;
+}
+
+.grupo-formulario input, select {
+    display:block;
+    width: 100%;
+    padding: 8px 16px;
+    font-size: 1rem;
+    border: 1px double black;
+    color: #666;
+    border-radius: 4px;
+    box-sizing: border-box;
+    outline: none;
+}
+#botao-formulario {
+    position: relative;
+    width: 100px;
+    height: 40px;
+    margin-top: 15px;
+    padding: 8px 16px;
+    background: var(--vermelho-claro);
+    color: white;
+    font-weight: lighter;
+    font-size: 16px;
+    border-radius: 25px;
+    transition: 1s all;
+    cursor: pointer;
+}
