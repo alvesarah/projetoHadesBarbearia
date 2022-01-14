@@ -46,7 +46,7 @@
 .sobre-header > p{
     font-family: var(--montserrat);
     color: #ffffff;
-    font-size: 38px;
+    font-size: 16px;
     text-align: center;
     text-shadow: .2rem .2rem rgba(0, 0, 0, 0.295);
     width: 55%;
@@ -55,7 +55,7 @@
 }
 
 .header-logo{
-    width: 320px;
+    width: 200px;
 }
 
 .div-ver-mais{
@@ -102,6 +102,7 @@ section > h1{
     display: flex;
     align-items: center;
     justify-content: center;
+    text-align: center;
 }
 
 section > h1 > img{
@@ -122,8 +123,12 @@ section > h1 > img{
     margin-top: 20px;
 }
 
+.img-um, .img-tres{
+    display: none;
+}
+
 .imagens-quem-somos > img{
-    width: 485px;
+    width: 100%;
     height:  300px;
 }
 
@@ -139,13 +144,21 @@ section > h1 > img{
 
 .descricao-filosofia{
     display: flex;
-    justify-content: space-around;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin: 30px 0;
 }
 
 .descricao-filosofia > article{
     width: 380px;
     height: 350px;
+    margin-bottom: 50px;
     background-color: var(--vermelho-claro);
+}
+
+.descricao-filosofia > article:last-child{
+    margin-bottom: 0;
 }
 
 .descricao-filosofia > article > div{
@@ -176,10 +189,8 @@ section > h1 > img{
 
 #diferenciais{
     width: 100%;
-    height: 100vh;
-    background-image: url(../imagens/background-diferenciais.png);
-    background-repeat: no-repeat;
-    background-size: cover;
+    min-height: 100vh;
+    background-color: var(--branco);
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -187,6 +198,7 @@ section > h1 > img{
 
 .descricao-diferenciais{
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
 }
@@ -219,14 +231,15 @@ section > h1 > img{
 /* SERVIÇOS */
 #servicos{
     width: 100%;
-    height: 100vh;
+    min-height: 100vh;
     background-color: var(--vermelho-claro);
 }
 
 .descricao-servicos{ 
     display: flex;
-    justify-content: space-around;
-    margin-top: 40px;
+    flex-direction: column;
+    align-items: center;
+    margin: 40px 0;
 }
 
 .descricao-servicos hr {
@@ -250,16 +263,95 @@ section > h1 > img{
 }
 
 .servicos-um > article > p, .servicos-dois > article > p{
-    font-size: 24px;
+    font-size: 14px;
     color: var(--preto);
 }
 
 .servicos-um > article > div > p, .servicos-dois > article > div > p{
-    font-size: 24px;
+    font-size: 14px;
     color: var(--preto);
 }
 
 .servicos-um > article > div > span, .servicos-dois > article > div > span{
-    font-size: 18px;
+    font-size: 12px;
     color: var(--preto);
+}
+
+@media screen and (min-width: 540px){
+    .header-logo{
+        width: 320px;
+    }    
+
+    .sobre-header > p{
+        font-size: 24px;
+    }
+    
+    .servicos-um > article > p, .servicos-dois > article > p{
+        font-size: 24px;
+        color: var(--preto);
+    }
+    
+    .servicos-um > article > div > p, .servicos-dois > article > div > p{
+        font-size: 24px;
+        color: var(--preto);
+    }
+    
+    .servicos-um > article > div > span, .servicos-dois > article > div > span{
+        font-size: 14px;
+        color: var(--preto);
+    }
+    
+
+}
+
+@media screen and (min-width: 768px){
+    .img-um, .img-tres{
+        display: block;
+    }
+    
+    .imagens-quem-somos > img{
+        width: 485px;
+        height:  300px;
+    }
+    
+}
+
+@media screen and (min-width: 1200px){
+    /* FILOSOFIA */
+    .descricao-filosofia{
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    .descricao-filosofia > article{
+        margin-bottom: 0;
+    }
+
+    /* NOSSOS DIFERENCIAIS */
+    #diferenciais{
+        background-image: url(../imagens/background-diferenciais.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .descricao-diferenciais{
+        flex-direction: row;
+    }
+
+    /* SERVIÇOS */
+    #servicos{
+        width: 100%;
+        min-height: 100vh;
+        background-color: var(--vermelho-claro);
+    }
+
+    .descricao-servicos{ 
+        flex-direction: row;
+        justify-content: space-around;
+        margin-top: 40px;
+    }
+
+    .servicos-um > article > div > span, .servicos-dois > article > div > span{
+        font-size: 18px;
+    }
 }

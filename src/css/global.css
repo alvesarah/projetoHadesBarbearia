@@ -30,7 +30,6 @@ body[data-tema='dark']{
     --vermelho-claro:#8f000c;
 }
 
-
 header{
     width: 100%;
     height: 100vh;
@@ -122,13 +121,13 @@ header{
 
 /* SIDEBAR */
 .sidebar{
-    width: 20rem;
+    width: 100%;
     height: 100vh;
     background-color: var(--branco);
     position: fixed;
     top: 0;
     z-index: 99;
-    right: -20rem;
+    right: -100%;
     transition: all 1s;
 }
 
@@ -189,9 +188,10 @@ header{
     transition: 1s;
 }
 
+/* FOOTER */
 footer{
     width: 100%;
-    height: 50vh;
+    min-height: 50vh;
     padding: 0 20px;
     background-color: var(--branco);
     display: flex;
@@ -200,21 +200,8 @@ footer{
 
 .parte-cima{
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
     align-items: center;
-}
-
-.copyrigth{
-    width: 100%;
-    height: 10vh;
-}
-
-.copyrigth > p{
-   text-align: center;
-   font-family: var(--roboto);
-   font-size: 12px;
-   margin-top: 20px;
-   color: var(--preto);
 }
 
 .logo-footer{
@@ -222,17 +209,25 @@ footer{
 }
 
 .footer-cadastro{
-    width: 22%; 
-    font-size: 18px;
+    display: flex;
+    align-items: center;
+    width: 100%; 
+    font-size: 14px;
     font-family: var(--montserrat);
     color: var(--preto);
 }
 
+.footer-menu{
+    display: block;
+    margin-bottom: 30px;
+}
+
 .footer-menu > p{
+    font-size: 14px;
     text-align: center;
     font-family: var(--montserrat);
     color: var(--preto);
-    margin-top: 20px;
+    margin: 20px 10px;
 }
 
 .footer-menu > p > a{
@@ -251,7 +246,7 @@ footer{
 .footer-mapa > p{
     text-align: center;
     color: var(--preto);
-    font-size: 18px;
+    font-size: 14px;
     font-family: var(--montserrat);
 }
 
@@ -259,6 +254,20 @@ footer{
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+
+
+.copyrigth{
+    width: 100%;
+    height: 10vh;
+}
+
+.copyrigth > p{
+   text-align: center;
+   font-family: var(--roboto);
+   font-size: 12px;
+   margin-top: 20px;
+   color: var(--preto);
 }
 
 #link-topo{
@@ -276,4 +285,57 @@ footer{
     border-radius: 50%;
     color: #fff;
     box-shadow: 0 0 .4rem .6rem #00000009;
+}
+
+@media screen and (min-width: 540px){
+    .footer-cadastro{
+        font-size: 18px;
+    }
+
+    .footer-menu > p{
+        font-size: 18px;
+    }
+    
+    .footer-mapa > p{
+        font-size: 18px;
+    }
+    
+    .sidebar{
+        width: 20rem;
+        height: 100vh;
+        background-color: var(--branco);
+        position: fixed;
+        top: 0;
+        z-index: 99;
+        right: -20rem;
+        transition: all 1s;
+    }
+}
+
+@media screen and (min-width: 768px){
+    .footer-menu{
+        display: flex;
+        align-items: center;
+    }
+}
+
+@media screen and (min-width: 1200px){
+    .parte-cima{
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    .footer-cadastro{
+        display: block;
+        width: 22%; 
+    }
+
+    .footer-menu{
+        display: block;
+    }
+
+    .footer-menu > p{
+        margin-top: 20px;
+    }
+    
 }
