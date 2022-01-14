@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/global.css">
+    <link rel="stylesheet" href="../css/contato.css">
+    <link rel="stylesheet" href="../css/responsive.css">
+    <title>Contato- Hades | Barber Lounge</title>
+</head>
+<body data-tema="dark">
+    <img class="troca-tema js-troca-tema" src="../imagens/icones/tema-dark.svg" alt="">
+    <div class="hamburguer">
+        <div class="line" id="line1"></div>
+        <div class="line" id="line2"></div>
+        <div class="line" id="line3"></div>
+        <span>fechar</span>
+    </div>
+    
+
+    <aside class="sidebar">
+        <nav>
+            <ul class="menu">
+                <li class="menu-item">
+                    <a href="#home" class="menu-link">Home</a>
+                </li>
+                <li class="menu-item">
+                    <a href="#quem-somos" class="menu-link">Quem somos</a>
+                </li>
+                <li class="menu-item">
+                    <a href="#filosofia" class="menu-link">Filosofia</a>
+                </li>
+                <li class="menu-item">
+                    <a href="#diferenciais" class="menu-link">Diferenciais</a>
+                </li>
+                <li class="menu-item">
+                    <a href="#servicos" class="menu-link">Serviços</a>
+                </li>
+            </ul>
+        </nav>
+        <div class="sidebar-membro">
+            <button class="btn-membro">Se torne um membro</button>
+        </div>
+    </aside>
+
+   <main>
+       <div class="container-fale-conosco">
+            <div class="div-logo">
+                <img src="../imagens/icones/icon-fale-conosco.png"  class="img-contato" alt="Ícone fale conosco">
+                <h1>Fale Conosco</h1>
+                <img src="../imagens/icones/icon-fale-conosco.png"  class="img-contato" alt="Ícone fale conosco">
+            </div>
+        </div>
+        <div class="caixa-formulario">
+            <form>
+                <h2 class="form-h2">Tem alguma dúvida?</h2>
+                <h3 class="form-h3">Envie sua mensagem para nossa equipe!</h3>
+                
+                <div class="inputs">
+                    <div class="grupo-formulario">
+                        <label for="nome">Nome Completo</label>
+                        <input type="text" id="nome" class="input-principal" required placeholder="Nome">
+                    </div>
+    
+                    <div class="grupo-formulario">
+                        <label for="email">E-mail</label>
+                        <input type="email" id="email" class="input-principal" required placeholder="seuemail@exemplo.com">
+                    </div>
+    
+                    <div class="grupo-formulario">
+                        <label for="celular">Celular/Whatsapp</label>
+                        <input type="number" id="celular" class="input-principal" required placeholder="(XX) XXXXX-XXXX">
+                    </div>
+    
+                    <div class="grupo-formulario">
+                        <label>Como você conheceu a Hades Barber Lounge?</label>
+                        <select>
+                            <option>Anúncio no Facebook/Instagram</option>
+                            <option>Anúncio no Google ou outros sites</option>
+                            <option>Indicação de um amigo</option>
+                        </select>  
+                    </div>
+    
+                    <div class="grupo-formulario">
+                        <label for="texto" id="label-textarea">Qual a sua dúvida?</label>
+                        <textarea id="texto" class="input-principal" rows="4" cols="50" required placeholder="Digite aqui a sua dúvida."></textarea>
+                    </div>
+                    
+                </div>
+                <div class="grupo-formulario">
+                    <input type="submit" value="Envie sua mensagem" id="botao-formulario">
+
+                </div>
+               
+    
+            </form>
+        </div>
+       </div>
+   </main>
+
+   <footer>
+    <div class="parte-cima">
+        <div class="footer-cadastro">
+            <img class="logo-footer logo" src="../imagens/logo/logo-dark.png" alt="logo">
+            <p>Receba atualizações e as últimas notícias diretamente do seu e-mail. Basta fazer o <a>cadastro</a>!</p>
+        </div>
+        <div class="footer-menu">
+            <p class="menu-lista">Menu</p>
+            <p><a href="#quem-somos">Quem Somos</a></p>
+            <p><a href="#filosofia">Filosofia</a></p>
+            <p><a href="#diferenciais">Diferenciais</a></p>
+            <p><a href="#servicos">Serviços</a></p>
+        </div>
+        <div class="footer-mapa">
+            <p>Localização</p>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14670.628814805828!2d-46.990228702531006!3d-23.182708165611576!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94cf3bbde3aa291d%3A0x9c75c03a4db2d30f!2sCentral%20Barbearia!5e0!3m2!1spt-BR!2sbr!4v1641985497827!5m2!1spt-BR!2sbr" width="300" height="170" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+    </div>
+    <div class="copyrigth">
+        <br><hr>
+        <p>copyrigth © 2022 Todos os direitos reservados</p>
+    </div>
+</footer>
+<!-- FOOTER -->
+<a href="#home" id="link-topo">
+    <img src="../imagens/icones/up-arrow-dark.png" alt="">
+</a>
+
+    
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="../js/view/contato-view.js"></script>
+<script src="../js/controller/contato-controller.js"></script>
+<script src="../js/model/contato-model.js"></script>
+<script src="../js/main.js"></script>
+</body>
+</html>
