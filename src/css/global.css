@@ -15,7 +15,7 @@ body{
     --vermelho: #cf261f;
 }
 
-body[data-tema='ligth']{
+body[data-tema='light']{
     --branco:#ffffff;
     --preto:#000000;
     --vermelho-escuro:#8f000c;
@@ -191,7 +191,7 @@ header{
 
 footer{
     width: 100%;
-    min-height: 50vh;
+    height: 50vh;
     padding: 0 20px;
     background-color: var(--branco);
     display: flex;
@@ -202,7 +202,6 @@ footer{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    overflow-y: hidden;
 }
 
 .copyrigth{
@@ -246,7 +245,7 @@ footer{
 
 .menu-lista{
     font-size: 24px;
-    margin-bottom: 28px;
+    margin-bottom: 40px;
 }
 
 .footer-mapa > p{
