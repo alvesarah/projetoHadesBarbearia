@@ -49,17 +49,25 @@ form{
     box-sizing: border-box;
     
 }
+
+.aviso-completar{
+    text-align: center;
+    background-color: #fff3cd;
+    border-radius: 10px;
+    border-color: #ffecb5;
+    margin-bottom: 30px;
+}
+
+.mensagem-erro{
+    margin: 20px;
+    color: #664d03;
+}
+
 label{
     margin: 0 0 8px 0;
     font-size: 18px;
     padding: 0;
 }
-
-#email:invalid{
-    border-color: crimson;
-    box-shadow: 0px 0px 3px crimson;
-}
-
 
 .caixa-formulario {
     display:flex;
@@ -68,6 +76,55 @@ label{
     width: 100%;
     min-height: 100vh;
     color: var(--preto);
+}
+
+/* Pega o tamanho do formulário */
+.container-mensagem-sucesso{
+    width: 50%;
+}
+
+/* Tem o próprio tamanho */
+.tamanho-mensagem{
+    border-radius: 10px;
+    color: #0f5132;
+    background-color: #d1e7dd;
+    border-color: #0f5132;
+    font-family: var(--roboto);
+    margin: 10% 0;
+    padding: 20px 30px;
+}
+
+.mensagem-h4{
+    font-size: 24px;
+    margin: 20px 0;
+}
+
+.p-mensagem, .descricao-mensagem{
+    font-size: 18px;
+    margin: 20px 0;
+
+}
+
+.teste{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn-sucesso{
+    margin-bottom: 50px;
+    padding: 18px;
+    border-radius: 10px;
+    color: #28a745;
+    border-color: #28a745;
+    background-color: white;
+    font-size: 18px;
+    font-family: var(--roboto);
+}
+
+.btn-sucesso:hover{
+    background-color: #28a745;
+    color: white;
 }
 
 /*Alteração de tamanho das fontes do título*/
@@ -103,12 +160,12 @@ label{
     padding: 8px 16px;
     font-size: 1rem;
     border: 1px double black;
-    color: #666;
     border-radius: 4px;
     box-sizing: border-box;
     outline: none;
 }
-#botao-formulario {
+
+.botao-formulario {
     position: relative;
     width: 200px;
     height: 40px;
