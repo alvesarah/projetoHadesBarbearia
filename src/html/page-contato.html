@@ -19,24 +19,26 @@
         <span>fechar</span>
     </div>
     
-
     <aside class="sidebar">
         <nav>
             <ul class="menu">
                 <li class="menu-item">
-                    <a href="#home" class="menu-link">Home</a>
+                    <a href="../index.html" class="menu-link">Home</a>
                 </li>
                 <li class="menu-item">
-                    <a href="#quem-somos" class="menu-link">Quem somos</a>
+                    <a href="../index.html#quem-somos" class="menu-link">Quem somos</a>
                 </li>
                 <li class="menu-item">
-                    <a href="#filosofia" class="menu-link">Filosofia</a>
+                    <a href="../index.html#filosofia" class="menu-link">Filosofia</a>
                 </li>
                 <li class="menu-item">
-                    <a href="#diferenciais" class="menu-link">Diferenciais</a>
+                    <a href="../index.html#diferenciais" class="menu-link">Diferenciais</a>
                 </li>
                 <li class="menu-item">
-                    <a href="#servicos" class="menu-link">Serviços</a>
+                    <a href="../index.html#servicos" class="menu-link">Serviços</a>
+                </li>
+                <li class="menu-item">
+                    <a href="../html/page-contato.html" class="menu-link">Contato</a>
                 </li>
             </ul>
         </nav>
@@ -45,7 +47,7 @@
         </div>
     </aside>
 
-   <main>
+   <main id="topo">
        <div class="container-fale-conosco">
             <div class="div-logo">
                 <img src="../imagens/icones/icon-fale-conosco.png"  class="img-contato" alt="Ícone fale conosco">
@@ -58,15 +60,18 @@
                 <h2 class="form-h2">Tem alguma dúvida?</h2>
                 <h3 class="form-h3">Envie sua mensagem para nossa equipe!</h3>
                 
+                <div class="aviso-completar"></div>
+
                 <div class="inputs">
                     <div class="grupo-formulario">
                         <label for="nome">Nome Completo</label>
-                        <input type="text" id="nome" class="input-principal" required placeholder="Nome">
+                        <input type="text" id="nome" class="input-principal" placeholder="Nome">
                     </div>
     
                     <div class="grupo-formulario">
                         <label for="email">E-mail</label>
                         <input type="email" id="email" class="input-principal" required placeholder="seuemail@exemplo.com">
+                        <div id="emailHelp" class="form-text"></div>
                     </div>
     
                     <div class="grupo-formulario">
@@ -77,6 +82,7 @@
                     <div class="grupo-formulario">
                         <label>Como você conheceu a Hades Barber Lounge?</label>
                         <select>
+                            <option>---</option>
                             <option>Anúncio no Facebook/Instagram</option>
                             <option>Anúncio no Google ou outros sites</option>
                             <option>Indicação de um amigo</option>
@@ -86,15 +92,11 @@
                     <div class="grupo-formulario">
                         <label for="texto" id="label-textarea">Qual a sua dúvida?</label>
                         <textarea id="texto" class="input-principal" rows="4" cols="50" required placeholder="Digite aqui a sua dúvida."></textarea>
-                    </div>
-                    
+                    </div>  
                 </div>
                 <div class="grupo-formulario">
-                    <input type="submit" value="Envie sua mensagem" id="botao-formulario">
-
+                    <input class="btn-enviar-formulario botao-formulario" type="submit" value="Envie sua mensagem">
                 </div>
-               
-    
             </form>
         </div>
        </div>
@@ -108,10 +110,11 @@
         </div>
         <div class="footer-menu">
             <p class="menu-lista">Menu</p>
-            <p><a href="#quem-somos">Quem Somos</a></p>
-            <p><a href="#filosofia">Filosofia</a></p>
-            <p><a href="#diferenciais">Diferenciais</a></p>
-            <p><a href="#servicos">Serviços</a></p>
+            <p><a href="../index.html#quem-somos">Quem Somos</a></p>
+            <p><a href="../index.html#filosofia">Filosofia</a></p>
+            <p><a href="../index.html#diferenciais">Diferenciais</a></p>
+            <p><a href="../index.html#servicos">Serviços</a></p>
+            <p><a href="../html/page-contato.html">Contato</a></p>
         </div>
         <div class="footer-mapa">
             <p>Localização</p>
@@ -123,12 +126,12 @@
         <p>copyrigth © 2022 Todos os direitos reservados</p>
     </div>
 </footer>
+
 <!-- FOOTER -->
-<a href="#home" id="link-topo">
+<a href="#topo" id="link-topo">
     <img src="../imagens/icones/up-arrow-dark.png" alt="">
 </a>
 
-    
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 <script src="../js/view/contato-view.js"></script>
 <script src="../js/controller/contato-controller.js"></script>
