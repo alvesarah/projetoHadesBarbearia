@@ -38,7 +38,7 @@ header{
 }
 
 .troca-tema{
-    position: absolute;
+    position: fixed;
     z-index: 98;
     right: 6rem;
     top: 2rem;
@@ -152,7 +152,7 @@ header{
     font-family: var(--montserrat);
     font-size: 1.5rem;
     color: gray;
-    transition: color 1s;
+    transition: 1s;
     text-transform: uppercase;
 }
 
@@ -182,7 +182,7 @@ header{
     border: 0;
 }
 
-.btn-membro:hover{
+.btn-membro:hover, .botao-formulario:hover{
     background-color: var(--vermelho-escuro);
     color: var(--vermelho-claro);
     transition: 1s;
@@ -206,6 +206,10 @@ footer{
 
 .logo-footer{
     width: 160px;
+}
+
+.mudacor-footer{
+    color: var(--vermelho-escuro);
 }
 
 .footer-cadastro{
@@ -243,11 +247,16 @@ footer{
     margin-bottom: 40px;
 }
 
+.links-footer{
+    transition: 1s;
+}
+
 .footer-mapa > p{
     text-align: center;
     color: var(--preto);
     font-size: 14px;
     font-family: var(--montserrat);
+    margin-bottom: 20px;
 }
 
 .footer-mapa{
@@ -276,9 +285,9 @@ footer{
     bottom: 3rem;
     width: 3rem;
     height: 3rem;
-    background: #333333;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #dd1818, #333333);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #dd1818, #333333); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: #333333;
+    background: -webkit-linear-gradient(to right, #dd1818, #333333); 
+    background: linear-gradient(to right, #dd1818, #333333); 
     display: flex;
     justify-content: center;
     align-items: center;
@@ -332,10 +341,11 @@ footer{
 
     .footer-menu{
         display: block;
+        margin-bottom: 0;
     }
 
     .footer-menu > p{
-        margin-top: 20px;
+        margin: 20px 10px 0 10px;
     }
     
 }

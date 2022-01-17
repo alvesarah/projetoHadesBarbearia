@@ -30,35 +30,6 @@
     label{
         font-size: 14px;
     }
-
-  
-    footer .parte-cima{
-        flex-direction: column;
-    }
-
-    .footer-cadastro > p{
-        font-size: 16px;
-    }
-
-    .logo-footer{
-        width: 130px;
-        height: 130px;
-    }
-
-   .menu-lista{
-       font-size: 18px;
-   }
-
-   .footer-menu{
-       padding-bottom: 30px;
-   }
-   .footer-menu > p a{
-       font-size: 16px;
-   }
-
-   .footer-mapa > p{
-       padding-bottom: 20px;
-   }
 }
 
 /*Tablet*/
@@ -79,7 +50,7 @@
     }
 
     label{
-        font-size: 30px;
+        font-size: 16px;
     }
 
     #botao-formulario{
@@ -87,35 +58,5 @@
         height: 50px;
         font-size: 20px;
         margin-top: 60px;
-    }
-
-    .footer-cadastro{
-        width: 100%;
-        max-width: 34%;
-    }
-    .footer-cadastro > p{
-        font-size: 15px;
-    }
-
-    .logo-footer{
-        width: 130px;
-        height: 130px;
-    }
-
-    
-   
-    .footer-menu > p > a{
-        margin-top: 50px;
-    }
-
-    .footer-mapa > p{
-        margin-top: 20px;
-        padding-bottom: 20px;
-    }
-
-    .footer-mapa iframe{
-        width: 250px;
-        height: 200px;
-    }
-    
+    }    
 }

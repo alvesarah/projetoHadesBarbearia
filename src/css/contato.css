@@ -54,8 +54,9 @@ form{
     text-align: center;
     background-color: #fff3cd;
     border-radius: 10px;
-    border-color: #ffecb5;
+    border: 2px solid #ffe9a9;
     margin-bottom: 30px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.425);
 }
 
 .mensagem-erro{
@@ -92,6 +93,8 @@ label{
     font-family: var(--roboto);
     margin: 10% 0;
     padding: 20px 30px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.425);
+    border: 2px solid #0f51323a;
 }
 
 .mensagem-h4{
@@ -120,6 +123,7 @@ label{
     background-color: white;
     font-size: 18px;
     font-family: var(--roboto);
+    transition: 1s;
 }
 
 .btn-sucesso:hover{
@@ -154,6 +158,12 @@ label{
     justify-content: start;
     flex-direction: column;
 }
+
+input:focus, textarea:focus, select:focus{
+    box-shadow: inset 1px 4px 7px rgba(0, 0, 0, 0.5);
+}
+
+
 .grupo-formulario input, select {
     display:block;
     width: 100%;
