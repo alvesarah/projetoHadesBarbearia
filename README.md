@@ -55,19 +55,19 @@ O layout da aplicação está disponível no Figma:
 
 ### Mobile
 <!-- PRINT dO SITE NO CELULAR -->
-<!-- <p align="center">
-  <img alt="NextLevelWeek" title="#NextLevelWeek" src="./assets/home-mobile.png" width="200px">
+<p align="center"></p>
+  <img alt="NextLevelWeek" title="#NextLevelWeek" src="./src/assets/home-mobile.gif" width="200px">
 
-  <img alt="NextLevelWeek" title="#NextLevelWeek" src="./assets/detalhes-mobile.svg" width="200px">
-</p> -->
+  <img alt="NextLevelWeek" title="#NextLevelWeek" src="./src/assets/contato-mobile.gif" width="200px">
+</p>
 
 ### Web
 <!-- PRINT dO SITE NO COMPUTADOR -->
-<!-- <p align="center" style="display: flex; align-items: flex-start; justify-content: center;">
-  <img alt="NextLevelWeek" title="#NextLevelWeek" src="./assets/web.svg" width="400px">
+<p align="center" style="display: flex; align-items: flex-start; justify-content: center;">
+  <img alt="NextLevelWeek" title="#NextLevelWeek" src="./src/assets/home-desktop.gif" width="400px">
 
-  <img alt="NextLevelWeek" title="#NextLevelWeek" src="./assets/sucesso-web.svg" width="400px">
-</p> -->
+  <img alt="NextLevelWeek" title="#NextLevelWeek" src="./src/assets/contato-desktop.gif" width="400px">
+</p>
 
 ---
 
