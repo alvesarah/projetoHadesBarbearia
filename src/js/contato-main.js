@@ -29,7 +29,7 @@ $('.btn-enviar-formulario').click(function(e){
                 </div>
 
                 <div class="teste">
-                    <a class="btn-sucesso" href="../index.html">Ir para Home</a>
+                    <a class="btn-sucesso" href="../../index.html">Ir para Home</a>
                 </div>
             </div>
         `);
