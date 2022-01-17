@@ -123,7 +123,9 @@ As seguintes ferramentas foram usadas na construção do projeto:
 ---
 
 ## 🦸 Autores
-
+<table>
+<tr>
+<td>
 <a href="https://github.com/sashamoon">
     <img style="border-radius: 50%;" src="./src/assets/foto-sarah.jpg" width="100px;" alt="">
     <br>
@@ -134,7 +136,12 @@ As seguintes ferramentas foram usadas na construção do projeto:
 
 [![Linkedin Badge](https://img.shields.io/badge/-Sarah-blue?style=flat-square&logo=Linkedin&logoColor=white&link=https://www.linkedin.com/in/sarahalvesoliveira/)](https://www.linkedin.com/in/sarahalvesoliveira/) 
 [![Gmail Badge](https://img.shields.io/badge/-salves726@gmail.com-c14438?style=flat-square&logo=Gmail&logoColor=white&link=mailto:salves726@gmail.com)](mailto:salves726@gmail.com)
-
+</td>
+<td>
+<p><stong>Experiência:</stong> ...</p>
+</td>
+</tr>
+</table>
 <br><br>
 
 <a href="https://github.com/sashamoon">
