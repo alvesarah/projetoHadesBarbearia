@@ -123,9 +123,6 @@ As seguintes ferramentas foram usadas na construção do projeto:
 ---
 
 ## 🦸 Autores
-<table>
-<tr>
-<td>
 <a href="https://github.com/sashamoon">
     <img style="border-radius: 50%;" src="./src/assets/foto-sarah.jpg" width="100px;" alt="">
     <br>
@@ -133,25 +130,19 @@ As seguintes ferramentas foram usadas na construção do projeto:
 </a>
 <a href="https://github.com/sashamoon">🦄</a>
 <br>
-
 [![Linkedin Badge](https://img.shields.io/badge/-Sarah-blue?style=flat-square&logo=Linkedin&logoColor=white&link=https://www.linkedin.com/in/sarahalvesoliveira/)](https://www.linkedin.com/in/sarahalvesoliveira/) 
 [![Gmail Badge](https://img.shields.io/badge/-salves726@gmail.com-c14438?style=flat-square&logo=Gmail&logoColor=white&link=mailto:salves726@gmail.com)](mailto:salves726@gmail.com)
-</td>
-<br>
-<td>
-<a href="https://github.com/sashamoon">
+<br><br>
+
+<a href="https://github.com/rafaeladns">
     <img style="border-radius: 50%;" src="./src/assets/foto-rafaela.jpeg" width="100px;" alt="">
     <br>
     <sub><b>Rafaela Dias</b></sub>
 </a> 
 <a href="https://github.com/rafaeladns">🎸</a>
 <br>
-
 [![Linkedin Badge](https://img.shields.io/badge/-Rafaela-blue?style=flat-square&logo=Linkedin&logoColor=white&link=https://www.linkedin.com/in/rafaela-sousa-8305a7224/)](https://www.linkedin.com/in/rafaela-sousa-8305a7224/) 
 [![Gmail Badge](https://img.shields.io/badge/-rafaeladiasneves95@gmail.com-c14438?style=flat-square&logo=Gmail&logoColor=white&link=mailto:rafaeladiasneves95@gmail.com)](mailto:rafaeladiasneves95@gmail.com)
-</td>
-</tr>
-</table>
 
 
 ---
