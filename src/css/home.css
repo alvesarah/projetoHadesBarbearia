@@ -1,17 +1,4 @@
 /* HEADER */
-#header-absolute{
-    background-color: #0000006b;
-    position: absolute;
-    z-index: 3;
-}
-
-.header{
-    width: 100%;
-    height: 100vh;
-    overflow: hidden;
-    position: relative;
-}
-
 .background-header{
     width: 100%;
     height: 100%;
@@ -24,7 +11,7 @@
     height: 100vh;
     object-fit: cover;
     opacity: 0.5;
-    animation: zoom 25s;
+    animation: zoom 10s;
 }
 
 @keyframes zoom {
@@ -56,6 +43,10 @@
 
 .header-logo{
     width: 200px;
+}
+
+.mudacor-header{
+    color: var(--vermelho-claro);
 }
 
 .div-ver-mais{
@@ -106,7 +97,7 @@ section > h1{
 }
 
 section > h1 > img{
-    padding: 0 50px;
+    display: none;
 }
 
 .descricao-quem-somos{
@@ -155,11 +146,21 @@ section > h1 > img{
     height: 350px;
     margin-bottom: 50px;
     background-color: var(--vermelho-claro);
+    cursor: pointer;
 }
 
 .descricao-filosofia > article:last-child{
     margin-bottom: 0;
 }
+
+.descricao-filosofia > article:hover{
+    animation: mymove 3s;
+}
+
+@keyframes mymove{
+    0%{box-shadow:0 0 #3e3e3e,0 0 #3e3e3e,0 0 #3e3e3e,0 0 #3e3e3e,0 0 #3e3e3e,0 0 #3e3e3e,0 0 #3e3e3e,0 0 #3e3e3e;transform:translateX(0) translateY(0)}100%{box-shadow:1px -1px #3e3e3e,2px -2px #3e3e3e,3px -3px #3e3e3e,4px -4px #3e3e3e,5px -5px #3e3e3e,6px -6px #3e3e3e,7px -7px #3e3e3e,8px -8px #3e3e3e;transform:translateX(-8px) translateY(8px)}
+}
+
 
 .descricao-filosofia > article > div{
     display: flex;
@@ -187,14 +188,19 @@ section > h1 > img{
 }
 
 /* NOSSOS DIFERENCIAIS */
-
 #diferenciais{
     width: 100%;
     min-height: 100vh;
-    background-color: var(--branco);
+    background-image: url(../imagens/background-madeira-mobile.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+}
+
+.titulo-diferencial{
+    color: white;
 }
 
 .descricao-diferenciais{
@@ -204,29 +210,92 @@ section > h1 > img{
     align-items: center;
 }
 
+.descricao-diferenciais > hr{
+    display: none;
+}
+
 .descricao-diferenciais > article{
     width: 360px;
     height: 320px;
     margin: 0 20px;
+    cursor: pointer;
+}
+
+.descricao-diferenciais > article:hover{
+    animation: diferenciais 8s;
+}
+
+
+@keyframes diferenciais{
+    0%   {transform: scale(.5);}
+    100% {background: black; transform: scale(1); border-radius: 15px;}
 }
 
 .descricao-diferenciais > article > h3{
     text-align: center;
     font-size: 36px;
     font-family: var(--montserrat);
-    color: var(--preto);
+    color: white;
 }
 
 .descricao-diferenciais > article > p{
     text-align: center;
     font-size: 18px;
     font-family: var(--montserrat);
-    color: var(--preto);
+    color: white;
     margin-top: 30px;
 }
 
 .descricao-diferenciais > article > img{
     margin: 8% 0 0 35%;
+}
+
+/* PRODUTOS */
+#produtos{
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    background-color: var(--branco);
+    color: var(--preto);
+    font-family: var(--montserrat);
+}
+
+#produtos > article{
+    display: flex;
+    margin: 20px;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.descricao-img-produtos{
+    margin: 20px 0;
+    height: 394px;
+    width: 624px;
+}
+
+.button-produtos{
+    display: flex;
+    align-items: center;
+    color: var(--preto);
+    background-color: transparent;
+    border: 2px solid var(--vermelho-escuro);
+    border-radius: 5px;
+    padding: 5px 8px;
+    transition: 1s;
+}
+
+.button-produtos > img{
+    margin-right: 8px;
+}
+
+.button-produtos:hover{
+    border: 2px solid var(--vermelho-claro);
+    background-color: black;
+    color: white;
 }
 
 /* SERVIÇOS */
@@ -241,6 +310,7 @@ section > h1 > img{
     flex-direction: column;
     align-items: center;
     margin: 40px 0;
+    width: 100%;
 }
 
 .descricao-servicos hr {
@@ -248,12 +318,12 @@ section > h1 > img{
 }
 
 .servicos-um{
-    width: 45%;
+    width: 90%;
     height: 80%;
 }
 
 .servicos-dois{
-    width: 45%;
+    width: 90%;
     height: 80%;
 }
 
@@ -261,20 +331,30 @@ section > h1 > img{
     display: flex;
     justify-content: space-between;
     margin-top: 7%;
+    cursor: pointer;
 }
 
+.servicos-um > article:hover, .servicos-dois > article:hover{
+    animation: zoomPrecos 3s;
+}
+
+@keyframes zoomPrecos{
+    0%{transform:scale(.5)}100%{transform:scale(1)}
+}
+
+
 .servicos-um > article > p, .servicos-dois > article > p{
-    font-size: 14px;
-    color: var(--preto);
+    font-size: 18px;
+    color: var(--vermelho-escuro);
 }
 
 .servicos-um > article > div > p, .servicos-dois > article > div > p{
-    font-size: 14px;
+    font-size: 18px;
     color: var(--preto);
 }
 
 .servicos-um > article > div > span, .servicos-dois > article > div > span{
-    font-size: 12px;
+    font-size: 16px;
     color: var(--preto);
 }
 
@@ -289,20 +369,20 @@ section > h1 > img{
     
     .servicos-um > article > p, .servicos-dois > article > p{
         font-size: 24px;
-        color: var(--preto);
     }
     
     .servicos-um > article > div > p, .servicos-dois > article > div > p{
         font-size: 24px;
-        color: var(--preto);
     }
     
     .servicos-um > article > div > span, .servicos-dois > article > div > span{
         font-size: 14px;
-        color: var(--preto);
     }
     
-
+    section > h1 > img{
+        display: block;
+        padding: 0 50px;
+    }    
 }
 
 @media screen and (min-width: 768px){
@@ -330,14 +410,24 @@ section > h1 > img{
 
     /* NOSSOS DIFERENCIAIS */
     #diferenciais{
-        background-image: url(../imagens/background-diferenciais.png);
+        background-image: url(../imagens/background-madeira.jpg);
         background-repeat: no-repeat;
         background-size: cover;
+        justify-content: space-around;
     }
 
     .descricao-diferenciais{
         flex-direction: row;
     }
+
+    .descricao-diferenciais > hr{
+        display: block;
+    }
+
+    /* PRODUTOS */
+    #produtos{
+        flex-direction: row;    
+    }    
 
     /* SERVIÇOS */
     #servicos{
@@ -350,6 +440,14 @@ section > h1 > img{
         flex-direction: row;
         justify-content: space-around;
         margin-top: 40px;
+    }
+
+    .servicos-um{
+        width: 45%;
+    }
+    
+    .servicos-dois{
+        width: 45%;
     }
 
     .servicos-um > article > div > span, .servicos-dois > article > div > span{

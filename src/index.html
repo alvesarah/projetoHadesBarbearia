@@ -4,6 +4,7 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" type="image/png" sizes="16x16" href="./imagens/icones/barber-sign.png">
         <link rel="stylesheet" href="../src/css/reset.css">
         <link rel="stylesheet" href="../src/css/global.css">
         <link rel="stylesheet" href="../src/css/home.css">
@@ -25,7 +26,7 @@
             </figure>
             <div class="sobre-header">
                 <img class="header-logo" src="../src/imagens/logo/logo-dark.png" alt="logo">
-                <p><strong>Hades</strong> é uma barbearia moderna que prioriza o conforto e bem-estar dos clientes, com um bom atendimento e local confortável.</p>
+                <p><strong class="mudacor-header">Hades</strong> é uma barbearia moderna que prioriza o conforto e bem-estar dos clientes, com um bom atendimento e local confortável.</p>
             </div>
             <div class="div-ver-mais">
                 <a href="#quem-somos">Ver mais</a><br><i class="fas fa-chevron-down seta-baixo"></i>
@@ -67,7 +68,7 @@
                     Quem somos 
                     <img class="icone-quem-somos" src="../src/imagens/icones/quem-somos-dark.png" alt="mãos dadas">
                 </h1>
-                <p class="descricao-quem-somos">O hades barber atua desde 2022 e desde então se esforça para total satifação do cliente seja em corte, barba ou qualquer outro procedimento estético, do começo ao fim. Nós ofeecemos uma gama de serviços com muitos produtos de qualidade e a cada dia estamos crecenso mais no ramo.</p>
+                <p class="descricao-quem-somos">O hades barber atua desde 2022 e desde então se esforça para total satifação do cliente seja em corte, barba ou qualquer outro procedimento estético, do começo ao fim. Nós oferecemos uma gama de serviços com muitos produtos de qualidade e a cada dia estamos crecenso mais no ramo.</p>
                 <div class="imagens-quem-somos">
                     <img class="img-um" src="../src/imagens/barbearia.jpg" alt="Dentro da barbearia">
                     <img class="img-dois" src="../src/imagens/homem-avental.jpg" alt="Homem com avental">
@@ -88,7 +89,7 @@
                                 Missão
                             </h3>
                         </div>
-                        <p class="descricao-missao">A barber Hades tem a missão de prestar com excelência os serviços de corte e barba, para realçar a beleza do público masculino e proporcionar uma experiência de plena satisfação, sempre buscando novos métodos de serviço e atendimento.</p>
+                        <p class="descricao-missao">A barber Hades tem a missão de prestar com excelência os serviços de corte e barba, para realçar a beleza e proporcionar uma experiência de plena satisfação, sempre buscando novos métodos de serviço e atendimento.</p>
                     </article>
                     <article>
                         <div>
@@ -97,7 +98,7 @@
                                 Visão
                             </h3>
                         </div>
-                        <p class="descricao-visao">Se tornar uma empresa de estética masculina que seja referência nacionalmente e reconhecida por seus valores e fidelização e satisfação dos clientes.</p>
+                        <p class="descricao-visao">Se tornar uma empresa de estética que seja referência nacionalmente e reconhecida por seus valores e fidelização e satisfação dos clientes.</p>
                     </article>
                     <article>
                         <div>
@@ -118,10 +119,10 @@
                 </div>
             </section>
             <section id="diferenciais">
-                <h1>
-                    <img src="../src/imagens/icones/diferencial-dark.png" alt="mãos dadas"> 
+                <h1 class="titulo-diferencial">
+                    <img src="../src/imagens/icones/diferencial.png" alt="mãos dadas"> 
                     Nossos Diferenciais
-                    <img src="../src/imagens/icones/diferencial-dark.png" alt="mãos dadas">
+                    <img src="../src/imagens/icones/diferencial.png" alt="mãos dadas">
                 </h1>
                 <div class="descricao-diferenciais">
                     <article>
@@ -142,6 +143,24 @@
                         <img src="../src/imagens/icones/produtos-dark.png" alt="mão segurando uma caixa">
                     </article>
                 </div>
+            </section>
+            <section id="produtos">
+                <article>
+                    <h3>Agende seu horário agora mesmo!</h3>
+                    <img src="./imagens/cabelereiro-produtos.png" class="descricao-img-produtos">
+                    <button class="button-produtos">
+                        <img src="./imagens/icones/agendar-dark.png" class="calendario" alt="Calendário" sizes="20px">
+                        <span>Agendar agora</span>
+                    </button>
+                </article>
+                <article>
+                    <h3>Confira nossa loja online</h3>
+                    <img src="./imagens/cabelo-produtos.png" class="descricao-img-produtos">
+                    <button class="button-produtos">
+                        <img src="./imagens/icones/comprar-dark.png" class="carrinho-compras" alt="Calendário" sizes="20px">
+                        <span>Comprar</span>
+                    </button>
+                </article>
             </section>
             <section id="servicos">
                 <h1>
@@ -243,15 +262,15 @@
             <div class="parte-cima">
                 <div class="footer-cadastro">
                     <img class="logo-footer logo" src="../src/imagens/logo/logo-dark.png" alt="logo">
-                    <p>Receba atualizações e as últimas notícias diretamente do seu e-mail. Basta fazer o <a>cadastro</a>!</p>
+                    <p>Receba atualizações e as últimas notícias diretamente do seu e-mail. Basta fazer o <a><strong class="mudacor-footer">cadastro</strong></a>!</p>
                 </div>
                 <div class="footer-menu">
-                    <p class="menu-lista">Menu</p>
-                    <p><a href="#quem-somos">Quem Somos</a></p>
-                    <p><a href="#filosofia">Filosofia</a></p>
-                    <p><a href="#diferenciais">Diferenciais</a></p>
-                    <p><a href="#servicos">Serviços</a></p>
-                    <p><a href="../src/html/page-contato.html">Contato</a></p>
+                    <p class="menu-lista"><a class="links-footer" href="#home">Menu</a></p>
+                    <p><a class="links-footer" href="#quem-somos">Quem Somos</a></p>
+                    <p><a class="links-footer" href="#filosofia">Filosofia</a></p>
+                    <p><a class="links-footer" href="#diferenciais">Diferenciais</a></p>
+                    <p><a class="links-footer" href="#servicos">Serviços</a></p>
+                    <p><a class="links-footer" href="../src/html/page-contato.html">Contato</a></p>
                 </div>
                 <div class="footer-mapa">
                     <p>Localização</p>
