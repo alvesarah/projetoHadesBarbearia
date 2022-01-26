@@ -302,6 +302,10 @@ section > h1 > img{
     animation: pula 1s;
 }
 
+.comprar-a{
+    color: var(--preto);
+}
+
 /* SERVIÇOS */
 #servicos{
     width: 100%;
