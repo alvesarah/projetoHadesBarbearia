@@ -162,7 +162,9 @@ As seguintes ferramentas foram usadas na construção do projeto:
 
 </td>
 <td>
-<p><stong>Experiência:</stong> ...</p>
+<p><stong>Experiência:</stong> Durante o projeto eu pude aprimorar as minhas habilidades, foi um
+trabalho de grande aprendizado e desafiador. Foi uma experiência única onde evoluí
+tanto profissionalmente quanto pessoal.</p>
 </td>
 </tr>
 </table>
