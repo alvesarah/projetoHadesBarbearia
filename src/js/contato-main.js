@@ -15,7 +15,7 @@ $('#email').focusout(function(e){
     controller.repassaEmail();
 });
 
-$('.btn-enviar-formulario').click(function(e){
+$('.botao-formulario').click(function(e){
     e.preventDefault();
     console.log($('#nome').val());
     if(($('#nome').val() != "") && ($('#email').val().indexOf("@") > -1) && ($('#celular').val() != "") && ($('#texto').val() != "")){
@@ -38,4 +38,9 @@ $('.btn-enviar-formulario').click(function(e){
             <p class="mensagem-erro">Complete todos os campos para que a mensagem seja enviada!</p>
         `);
     }
+});
+
+// HAMBURGUER E NAV FIXO
+$('.hamburguer').click(function(){
+    $('body').hasClass('show-menu') ? $('#teste').removeClass('bg-header') : $('#teste').addClass('bg-header');
 });
