@@ -1,0 +1,228 @@
+#produtos{
+    width: 100%;
+    min-height: 100vh;
+    background-color: var(--vermelho-claro);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+section > h1{
+    font-size: 30px;
+    font-family: var(--montserrat);
+    color: var(--preto);
+    padding: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+section > h1 > img{
+    display: none;
+    padding: 0 50px;
+} 
+
+.card-produtos{
+    display: grid;
+    justify-content: space-around;
+    grid-template-columns: auto;
+    padding: 10px;
+}
+
+.produto{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    width: 300px;
+    height: 300px;
+    margin: 20px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    border-radius: 5px;
+    overflow-y: hidden;
+}
+
+.mais-detalhes-produto{
+    display: none;
+    height: 80%;
+}
+
+.lupa{
+    color: var(--vermelho);
+}
+
+.produto:hover .mais-detalhes-produto{
+    bottom: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.produto:hover > *:not(.mais-detalhes-produto), .produto:focus, .produto:active {
+    -webkit-transform: scale(1.2);
+    transform: scale(1.2);
+    -webkit-transition-timing-function: cubic-bezier(0.47, 2.02, 0.31, -0.36);
+    transition-timing-function: cubic-bezier(0.47, 2.02, 0.31, -0.36);
+    box-shadow: 0 10px 10px -10px rgba(0, 0, 0, 0.5);
+    transition: all 1s ease;
+    -webkit-filter: blur(5px); /* Chrome, Safari, Opera */
+    filter: blur(5px);
+}
+
+.produto > img{
+    width: 200px;
+    height: 200px;
+}
+
+.produto > p{
+    font-family: var(--montserrat);
+    font-size: 18px;
+    padding: 15px;
+    background-color: var(--vermelho-escuro);
+    width: 100%;
+    height: 40%;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    overflow-y: hidden;
+    color: var(--branco);
+}
+
+/* MODAL */
+
+@-webkit-keyframes example {
+    from {top:-100px;opacity: 0;}
+    to {top:0px;opacity:1;}
+}
+  
+
+@keyframes example {
+    from {top:-100px;opacity: 0;}
+    to {top:0px;opacity:1;}
+}
+
+.modal-container:target {
+    display: flex;
+    position: absolute;
+}
+
+
+.modal-container{
+    width: 100vw;
+    height: 100vh;
+    background-color: var(--branco-opacidade);
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    z-index: 2000;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    padding-top: 40px;
+}
+
+.modal{
+    background-color: white;
+    width: 60%;
+    min-width: 300px;
+    padding: 40px 0;
+    border: 10px solid var(--vermelho-claro);
+    box-shadow: 0 0 0 10px var(--preto);
+    position: relative;
+
+    -webkit-animation-name: example; 
+    -webkit-animation-duration: 0.5s; 
+    animation-name: example;
+    animation-duration: 0.5s;
+}
+
+.closebtn {
+    text-decoration: none;
+    float: right;
+    font-size: 35px;
+    font-weight: bold;
+    color: #000;
+}
+
+.closebtn:hover,
+.closebtn:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.detalhes-produto-modal{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+}
+
+.subtitulo-modal{
+    font-family: var(--montserrat);
+    font-size: 20px;
+    text-align: center;
+    color: var(--vermelho);
+    margin-bottom: 10px;
+}
+
+.produto-modal{
+    width: 350px;
+    height: 350px;
+}
+
+.descricao-produto-modal{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 50%;
+    text-align: center;
+}
+
+.paragrafo-modal{
+    font-family: var(--roboto);
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+
+.small-modal{
+    font-size: 16px;
+    font-family: var(--roboto);
+}
+
+@media screen and (min-width: 540px){
+
+}
+
+@media screen and (min-width: 768px){
+    section > h1{
+        font-size: 36px;
+        padding: 80px;
+    }
+
+    section > h1 > img{
+        display: block;
+        padding: 0 50px;
+    } 
+
+    .card-produtos{
+        grid-template-columns: auto auto;
+    }
+
+    /* modal */
+    .modal{
+        padding: 40px;
+    }
+
+    .detalhes-produto-modal{
+        flex-direction: row;
+    }
+}
+
+@media screen and (min-width: 1200px){
+    .card-produtos{
+        grid-template-columns: auto auto auto;
+    }      
+}
