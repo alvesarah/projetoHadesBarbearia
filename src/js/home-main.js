@@ -8,6 +8,8 @@ $(".js-troca-tema").click(()=>{
     controller.checaTema();
 })
 
+
+// Animação quando scrolla
 const debounce = function(func, wait, immediate) {
     let timeout;
     return function(...args) {
@@ -42,7 +44,7 @@ animeScroll();
 if(target.length){
     window.addEventListener('scroll', debounce(function(){
         animeScroll();
-    }, 200));
+    }, 25));
 }
 
 // HAMBURGUER E NAV FIXO
