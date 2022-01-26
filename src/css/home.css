@@ -1,16 +1,11 @@
 /* HEADER */
-.background-header{
-    width: 100%;
-    height: 100%;
-    overflow: hidden;
-    background-color: rgba(0, 0, 0, 0.849);
-}
-
-.background-header > img{
+#home{
     width: 100%;
     height: 100vh;
-    object-fit: cover;
-    opacity: 0.5;
+    background-image: url(../imagens/background-header.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
     animation: zoom 10s;
 }
 
@@ -75,10 +70,35 @@
     }
 }
 
+/* ANIMAÇÃO */
+[data-anime] {
+    opacity: 0;
+    transition: .3s;
+
+}
+
+[data-anime="left"] {
+    transform: translate3d(-50px, 0, 0);
+}
+
+[data-anime="right"] {
+    transform: translate3d(50px, 0, 0);
+}
+
+[data-anime="bottom"] {
+    transform: translate3d(0, 50px, 0);
+}
+
+[data-anime].animate{
+    opacity: 1;
+    transform: translate3d(0px, 0px, 0px);
+}
+
 /* QUEM SOMOS */
 #quem-somos{
     width: 100%;
     min-height: 100vh;
+    overflow-y: hidden;
     background-color: var(--vermelho-claro);
     display: flex;
     justify-content: space-between;
@@ -146,21 +166,15 @@ section > h1 > img{
     height: 350px;
     margin-bottom: 50px;
     background-color: var(--vermelho-claro);
-    cursor: pointer;
+}
+
+.article-missao:hover, .article-visao:hover, .article-valores:hover{
+    transform: skew(-5deg);
 }
 
 .descricao-filosofia > article:last-child{
     margin-bottom: 0;
 }
-
-.descricao-filosofia > article:hover{
-    animation: mymove 3s;
-}
-
-@keyframes mymove{
-    0%{box-shadow:0 0 #3e3e3e,0 0 #3e3e3e,0 0 #3e3e3e,0 0 #3e3e3e,0 0 #3e3e3e,0 0 #3e3e3e,0 0 #3e3e3e,0 0 #3e3e3e;transform:translateX(0) translateY(0)}100%{box-shadow:1px -1px #3e3e3e,2px -2px #3e3e3e,3px -3px #3e3e3e,4px -4px #3e3e3e,5px -5px #3e3e3e,6px -6px #3e3e3e,7px -7px #3e3e3e,8px -8px #3e3e3e;transform:translateX(-8px) translateY(8px)}
-}
-
 
 .descricao-filosofia > article > div{
     display: flex;
@@ -194,6 +208,7 @@ section > h1 > img{
     background-image: url(../imagens/background-madeira-mobile.jpg);
     background-repeat: no-repeat;
     background-size: cover;
+    background-attachment: fixed;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -218,17 +233,6 @@ section > h1 > img{
     width: 360px;
     height: 320px;
     margin: 0 20px;
-    cursor: pointer;
-}
-
-.descricao-diferenciais > article:hover{
-    animation: diferenciais 8s;
-}
-
-
-@keyframes diferenciais{
-    0%   {transform: scale(.5);}
-    100% {background: black; transform: scale(1); border-radius: 15px;}
 }
 
 .descricao-diferenciais > article > h3{
@@ -260,7 +264,6 @@ section > h1 > img{
     flex-direction: column;
     background-color: var(--branco);
     color: var(--preto);
-    font-family: var(--montserrat);
 }
 
 #produtos > article{
@@ -269,6 +272,8 @@ section > h1 > img{
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
+    font-family: var(--montserrat);
+    font-size: 18px;
 }
 
 .descricao-img-produtos{
@@ -293,9 +298,8 @@ section > h1 > img{
 }
 
 .button-produtos:hover{
-    border: 2px solid var(--vermelho-claro);
-    background-color: black;
-    color: white;
+    border: 2px solid var(--vermelho);
+    animation: pula 1s;
 }
 
 /* SERVIÇOS */
@@ -309,7 +313,7 @@ section > h1 > img{
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin: 40px 0;
+    padding: 40px 0;
     width: 100%;
 }
 
@@ -330,18 +334,8 @@ section > h1 > img{
 .servicos-um > article, .servicos-dois > article{
     display: flex;
     justify-content: space-between;
-    margin-top: 7%;
-    cursor: pointer;
+    padding-top: 7%;
 }
-
-.servicos-um > article:hover, .servicos-dois > article:hover{
-    animation: zoomPrecos 3s;
-}
-
-@keyframes zoomPrecos{
-    0%{transform:scale(.5)}100%{transform:scale(1)}
-}
-
 
 .servicos-um > article > p, .servicos-dois > article > p{
     font-size: 18px;

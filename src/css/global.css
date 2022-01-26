@@ -17,7 +17,9 @@ body{
 
 body[data-tema='light']{
     --branco:#ffffff;
+    --branco-opacidade:#ffffff77;
     --preto:#000000;
+    --preto-opacidade:#00000077;
     --vermelho-escuro:#8f000c;
     --vermelho-claro:#efdfc5;
 }
@@ -25,7 +27,9 @@ body[data-tema='light']{
 body[data-tema='dark']{
 
     --branco:#000000;
+    --branco-opacidade:#00000077;
     --preto:#ffffff;
+    --preto-opacidade:#ffffff77;
     --vermelho-escuro:#efdfc5;
     --vermelho-claro:#8f000c;
 }
@@ -37,11 +41,19 @@ header{
     position: relative;
 }
 
+.bg-header{
+    position: fixed;
+    width: 100%;
+    height: 60px;
+    z-index: 95;
+    background-color: var(--branco-opacidade);
+}
+
 .troca-tema{
     position: fixed;
     z-index: 98;
     right: 6rem;
-    top: 2rem;
+    top: 1rem;
     cursor: pointer;
 }
 
@@ -52,7 +64,7 @@ header{
     position: fixed;
     z-index: 100;
     right: 2rem;
-    top: 2rem;
+    top: 1rem;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
@@ -87,32 +99,6 @@ header{
     transform: rotate(-45deg) translate(.2rem, -.65rem);
     background-color: var(--preto);
     box-shadow: none;
-}
-
-.hamburguer span{
-    position: absolute;
-    left: 3rem;
-    height: 2rem;
-    width: 6rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: white;
-    font-family: var(--montserrat);
-    background: #FF0099;
-    background: -webkit-linear-gradient(to right, #493240, #FF0099);
-    background: linear-gradient(to right, #493240, #FF0099);
-    opacity: 0;
-}
-
-.hamburguer span::before{
-    content: "";
-    position: absolute;
-    border-right: .5rem solid #493240;
-    border-top: .5rem solid transparent;
-    border-left: .5rem solid transparent;
-    border-bottom: .5rem solid transparent;
-    left: -1rem;
 }
 
 .show-menu .hamburguer:hover span{
@@ -152,23 +138,31 @@ header{
     font-family: var(--montserrat);
     font-size: 1.5rem;
     color: gray;
-    transition: 1s;
+    transition: .5s;
     text-transform: uppercase;
 }
 
 .menu-link:hover{
     color: var(--vermelho);
+    text-decoration: underline;
+}
+
+.menu-link:active{
+    color: purple;
 }
 
 .sidebar-membro{
     position: absolute;
     bottom: 6rem;
     width: 100%;
+    height: 100px;
     display: flex;
     justify-content: space-evenly;
+    align-items: center;
 }
 
 .btn-membro {
+    height: 50px;
     border-radius: 15px;
     color: #FFFFFF;
     font-family: var(--montserrat);
@@ -182,10 +176,36 @@ header{
     border: 0;
 }
 
-.btn-membro:hover, .botao-formulario:hover{
+.btn-membro:hover{
+    animation: pula 1s;
     background-color: var(--vermelho-escuro);
     color: var(--vermelho-claro);
     transition: 1s;
+}
+
+@keyframes pula {
+    0%, 20%, 60%, 100%{
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+    }
+    40%{
+        -webkit-transform: translateY(-20px);
+        transform: translateY(-20px);
+    }
+    80%{
+        -webkit-transform: translateY(-10px);
+        transform: translateY(-10px);
+    }
+}
+
+/* EFEITO PARA TODOS OS BOTÕES */
+.efeito{
+    border: none;
+    border-radius: 10px;
+    position: relative;
+    box-sizing: border-box;
+    cursor: pointer;
+    transition: all 400ms ease;
 }
 
 /* FOOTER */
@@ -221,6 +241,20 @@ footer{
     color: var(--preto);
 }
 
+.mudacor-footer{
+    transition: .5s;
+}
+
+.mudacor-footer:hover{
+    cursor: pointer;
+    color: var(--vermelho);
+    text-decoration: underline;
+}
+
+.mudacor-footer:active{
+    color: purple;
+}
+
 .footer-menu{
     display: block;
     margin-bottom: 30px;
@@ -235,20 +269,35 @@ footer{
 }
 
 .footer-menu > p > a{
+    transition: .5s;
     color: var(--preto);
+}
+
+.tesoura{
+    content: "";
+    display: none;
+    background-image: url(../imagens/icones/tesoura.png);
+    background-size: 1rem;
+    width: 1rem;
+    height: 1rem;
+}
+
+.footer-menu > p > a:hover .tesoura{
+    display: inline-block;
 }
 
 .footer-menu > p > a:hover{
     color: var(--vermelho);
+    text-decoration: underline;
+}
+
+.footer-menu > p > a:active{
+    color: purple;
 }
 
 .menu-lista{
     font-size: 24px;
     margin-bottom: 40px;
-}
-
-.links-footer{
-    transition: 1s;
 }
 
 .footer-mapa > p{
