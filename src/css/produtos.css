@@ -135,7 +135,7 @@ section > h1 > img{
 
 .modal-container{
     width: 100vw;
-    height: 100vh;
+    min-height: 100vh;
     background-color: var(--branco-opacidade);
     position: fixed;
     top: 0px;
@@ -149,10 +149,13 @@ section > h1 > img{
 
 .modal{
     background-color: white;
-    width: 60%;
+    overflow-x: hidden;
+    width: 100%;
     min-width: 300px;
     padding: 40px 0;
-    border: 10px solid var(--vermelho-claro);
+    display: flex;
+    flex-direction:column;
+    align-items: center;
     box-shadow: 0 0 0 10px var(--preto);
     position: relative;
 
@@ -216,8 +219,12 @@ section > h1 > img{
     font-family: var(--roboto);
 }
 
-@media screen and (min-width: 540px){
-
+@media screen and (min-width: 540px){    
+    .modal{
+        display: block;
+        width: 60%;
+        border: 10px solid var(--vermelho-claro);
+    }
 }
 
 @media screen and (min-width: 768px){
