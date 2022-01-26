@@ -139,7 +139,7 @@ As seguintes ferramentas foram usadas na construção do projeto:
 
 </td>
 <td>
-<p><stong>Experiência:</stong> ...</p>
+<p><stong>Experiência:</stong> Durante o projeto, me senti muito desafiada pois sempre tinha muitas sprints para serem completadas em um curto periodo de tempo, mas eu gostei muito da experiência e creio que eu evolui muito com isso.</p>
 </td>
 </tr>
 </table>
